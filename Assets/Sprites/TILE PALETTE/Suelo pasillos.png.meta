@@ -1,0 +1,412 @@
+fileFormatVersion: 2
+guid: 7fea30d2b895a4a45b013d6e0427193e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7231819024868010540
+    second: Suelo pasillos_0
+  - first:
+      213: 8397764772877028114
+    second: Suelo pasillos_1
+  - first:
+      213: 1182295196161838064
+    second: Suelo pasillos_2
+  - first:
+      213: -8850572417536174281
+    second: Suelo pasillos_3
+  - first:
+      213: 8252494200664732609
+    second: Suelo pasillos_4
+  - first:
+      213: -8667877268779513191
+    second: Suelo pasillos_5
+  - first:
+      213: 8292687872330409325
+    second: Suelo pasillos_6
+  - first:
+      213: -8592729723544693549
+    second: Suelo pasillos_7
+  - first:
+      213: -7201626097842479891
+    second: Suelo pasillos_8
+  - first:
+      213: 166434089340650501
+    second: Suelo pasillos_9
+  - first:
+      213: -1639876718270343550
+    second: Suelo pasillos_10
+  - first:
+      213: 2930040309714716836
+    second: Suelo pasillos_11
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Suelo pasillos_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 238
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d594d6a9ea63ab90800000000000000
+      internalID: -7231819024868010540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 238
+        width: 34
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21bcf92519ada8470800000000000000
+      internalID: 8397764772877028114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 238
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb80e2873b586010800000000000000
+      internalID: 1182295196161838064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 206
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737d2e157437c2580800000000000000
+      internalID: -8850572417536174281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 206
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c3b79d70cfb68270800000000000000
+      internalID: 8252494200664732609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_5
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 190
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99ac6b56c8385b780800000000000000
+      internalID: -8667877268779513191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 190
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d65a17feeab851370800000000000000
+      internalID: 8292687872330409325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_7
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 190
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d49d29b7dd70c880800000000000000
+      internalID: -8592729723544693549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_8
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 158
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec9ae8483fae0c90800000000000000
+      internalID: -7201626097842479891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_9
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 147
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5044aa52cea4f4200800000000000000
+      internalID: 166434089340650501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_10
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 146
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286101c20dcfd39e0800000000000000
+      internalID: -1639876718270343550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Suelo pasillos_11
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 147
+        width: 29
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a80f1e332899a820800000000000000
+      internalID: 2930040309714716836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Suelo pasillos_0: -7231819024868010540
+      Suelo pasillos_1: 8397764772877028114
+      Suelo pasillos_10: -1639876718270343550
+      Suelo pasillos_11: 2930040309714716836
+      Suelo pasillos_2: 1182295196161838064
+      Suelo pasillos_3: -8850572417536174281
+      Suelo pasillos_4: 8252494200664732609
+      Suelo pasillos_5: -8667877268779513191
+      Suelo pasillos_6: 8292687872330409325
+      Suelo pasillos_7: -8592729723544693549
+      Suelo pasillos_8: -7201626097842479891
+      Suelo pasillos_9: 166434089340650501
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
