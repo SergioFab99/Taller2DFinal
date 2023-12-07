@@ -1162,7 +1162,7 @@ MonoBehaviour:
   rangoAtaque: 4.01
   capaEnemigos:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
 --- !u!50 &4989474258575709050
 Rigidbody2D:
   serializedVersion: 4

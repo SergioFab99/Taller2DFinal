@@ -25,13 +25,15 @@ public class GameManager : MonoBehaviour
 
     IEnumerator MoverObjeto()
     {
+
         float objetivoY = objetoAMover.transform.position.y + 5f;
 
         while (objetoAMover.transform.position.y < objetivoY)
         {
-            // Mover el objeto en el eje Y global
-            objetoAMover.transform.position += new Vector3(0, velocidadMovimiento * Time.deltaTime, 0);
+            objetoAMover.transform.Translate(0, velocidadMovimiento * Time.deltaTime, 0);
             yield return null;
         }
+
     }
+
 }

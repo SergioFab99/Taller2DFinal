@@ -1,0 +1,737 @@
+fileFormatVersion: 2
+guid: b2ed29987172c9d46b34f34c8a9eb95d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1167543028634811130
+    second: mapeado_0
+  - first:
+      213: 888573727809300899
+    second: mapeado_1
+  - first:
+      213: 7179563107134438527
+    second: mapeado_2
+  - first:
+      213: 8391481497160310666
+    second: mapeado_3
+  - first:
+      213: 4509392064854050215
+    second: mapeado_4
+  - first:
+      213: 2809657457983372035
+    second: mapeado_5
+  - first:
+      213: -5210675455938492874
+    second: mapeado_6
+  - first:
+      213: -4050936092088148838
+    second: mapeado_7
+  - first:
+      213: 8240190314291230278
+    second: mapeado_8
+  - first:
+      213: 1666475933045258704
+    second: mapeado_9
+  - first:
+      213: -6969475764047990723
+    second: mapeado_10
+  - first:
+      213: 1219790939543952744
+    second: mapeado_11
+  - first:
+      213: -1633613874298941346
+    second: mapeado_12
+  - first:
+      213: 5963683645442537789
+    second: mapeado_13
+  - first:
+      213: 5647634349678065581
+    second: mapeado_14
+  - first:
+      213: -3389420205612974715
+    second: mapeado_15
+  - first:
+      213: 3868923329003408536
+    second: mapeado_16
+  - first:
+      213: 1489286193643852382
+    second: mapeado_17
+  - first:
+      213: 8052775021515981748
+    second: mapeado_18
+  - first:
+      213: -3112004629843253369
+    second: mapeado_19
+  - first:
+      213: 5461231602393703516
+    second: mapeado_20
+  - first:
+      213: 2651721491369719477
+    second: mapeado_21
+  - first:
+      213: 3983292247045474769
+    second: mapeado_22
+  - first:
+      213: -3187619260159658452
+    second: mapeado_23
+  - first:
+      213: -2908815041909509148
+    second: mapeado_24
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mapeado_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6050d362dcd0ccfe0800000000000000
+      internalID: -1167543028634811130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a961daf819d45c00800000000000000
+      internalID: 888573727809300899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_2
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c7f336b9ee2a360800000000000000
+      internalID: 7179563107134438527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_3
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8fd08136f7847470800000000000000
+      internalID: 8391481497160310666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_4
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a54792f034949e30800000000000000
+      internalID: 4509392064854050215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_5
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b30a36298edf620800000000000000
+      internalID: 2809657457983372035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63680f8b746ffa7b0800000000000000
+      internalID: -5210675455938492874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 463
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cd647461f28c7c0800000000000000
+      internalID: -4050936092088148838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_8
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64671f4be690b5270800000000000000
+      internalID: 8240190314291230278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d976ef1803802710800000000000000
+      internalID: 1666475933045258704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_10
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30b93de7b2774f90800000000000000
+      internalID: -6969475764047990723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_11
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dd1c395619de010800000000000000
+      internalID: 1219790939543952744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_12
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50134a26dc3459e0800000000000000
+      internalID: -1633613874298941346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_13
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d39b867bda243c250800000000000000
+      internalID: 5963683645442537789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_14
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7fad1c48d606e40800000000000000
+      internalID: 5647634349678065581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_15
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58d38e9e74c56f0d0800000000000000
+      internalID: -3389420205612974715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_16
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c4870f44d21b530800000000000000
+      internalID: 3868923329003408536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_17
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 415
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52190d07e10ba410800000000000000
+      internalID: 1489286193643852382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_18
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b34995773431cf60800000000000000
+      internalID: 8052775021515981748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_19
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78762daf640ffc4d0800000000000000
+      internalID: -3112004629843253369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_20
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5460d025313acb40800000000000000
+      internalID: 5461231602393703516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_21
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b67c50a5aeccc420800000000000000
+      internalID: 2651721491369719477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_22
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d986bdb13f774730800000000000000
+      internalID: 3983292247045474769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_23
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c267dfeeb2d43c3d0800000000000000
+      internalID: -3187619260159658452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mapeado_24
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 367
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e3bba58120d1a7d0800000000000000
+      internalID: -2908815041909509148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mapeado_0: -1167543028634811130
+      mapeado_1: 888573727809300899
+      mapeado_10: -6969475764047990723
+      mapeado_11: 1219790939543952744
+      mapeado_12: -1633613874298941346
+      mapeado_13: 5963683645442537789
+      mapeado_14: 5647634349678065581
+      mapeado_15: -3389420205612974715
+      mapeado_16: 3868923329003408536
+      mapeado_17: 1489286193643852382
+      mapeado_18: 8052775021515981748
+      mapeado_19: -3112004629843253369
+      mapeado_2: 7179563107134438527
+      mapeado_20: 5461231602393703516
+      mapeado_21: 2651721491369719477
+      mapeado_22: 3983292247045474769
+      mapeado_23: -3187619260159658452
+      mapeado_24: -2908815041909509148
+      mapeado_3: 8391481497160310666
+      mapeado_4: 4509392064854050215
+      mapeado_5: 2809657457983372035
+      mapeado_6: -5210675455938492874
+      mapeado_7: -4050936092088148838
+      mapeado_8: 8240190314291230278
+      mapeado_9: 1666475933045258704
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
