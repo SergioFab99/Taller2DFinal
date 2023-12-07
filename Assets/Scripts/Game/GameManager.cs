@@ -1,13 +1,24 @@
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement; // Asegúrate de incluir este namespace para manejar las escenas
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int numLlaves = 0;
+    public static GameManager instance; // Referencia estática para un fácil acceso desde otros scripts
 
-    public GameObject objetoParaHabilitar; // Referencia al GameObject que se habilitará
+    public int numLlaves = 0;
+    public GameObject ObjetoEscena;
+
+    void Awake()
+    {
+        if (instance == null)
+            instance = this;
+        else if (instance != this)
+            Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject); // Opcional, mantiene este objeto entre escenas
+    }
 
     public void RecolectarLlave()
     {
@@ -16,16 +27,7 @@ public class GameManager : MonoBehaviour
 
         if (numLlaves == 3)
         {
-            objetoParaHabilitar.SetActive(true); // Habilita el GameObject
-        }
-    }
-
-    // Llamado cuando el GameObject habilitado colisiona con el jugador
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player")) // Asegúrate de que el GameObject del jugador tenga el tag "Player"
-        {
-            SceneManager.LoadScene("NivelBoss"); // Carga la escena "NivelBoss"
+            ObjetoEscena.SetActive(true); // Habilita el GameObject
         }
     }
 }
