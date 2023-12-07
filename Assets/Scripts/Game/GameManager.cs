@@ -1,39 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement; // Asegúrate de incluir este namespace para manejar las escenas
+
 public class GameManager : MonoBehaviour
 {
-
     public int numLlaves = 0;
 
-    public GameObject objetoAMover;
-    public float velocidadMovimiento = 1f;
+    public GameObject objetoParaHabilitar; // Referencia al GameObject que se habilitará
 
     public void RecolectarLlave()
     {
-
         numLlaves++;
+        Debug.Log("Has recolectado una llave! Ahora tienes " + numLlaves + " llaves.");
 
         if (numLlaves == 3)
         {
-            StartCoroutine(MoverObjeto());
+            objetoParaHabilitar.SetActive(true); // Habilita el GameObject
         }
-
-        Debug.Log("Has recolectado una llave! Ahora tienes " + numLlaves + " llaves.");
-
     }
 
-    IEnumerator MoverObjeto()
+    // Llamado cuando el GameObject habilitado colisiona con el jugador
+    private void OnTriggerEnter(Collider other)
     {
-
-        float objetivoY = objetoAMover.transform.position.y + 5f;
-
-        while (objetoAMover.transform.position.y < objetivoY)
+        if (other.CompareTag("Player")) // Asegúrate de que el GameObject del jugador tenga el tag "Player"
         {
-            objetoAMover.transform.Translate(0, velocidadMovimiento * Time.deltaTime, 0);
-            yield return null;
+            SceneManager.LoadScene("NivelBoss"); // Carga la escena "NivelBoss"
         }
-
     }
-
 }
