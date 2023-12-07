@@ -14,7 +14,7 @@ public class ObjetoEscena : MonoBehaviour
         {
             Debug.Log("El jugador ha entrado en el trigger.");
 
-            if (GameManager.instance.numLlaves >= 3)
+            if (GameManager.instance.numLlaves == 3)
             {
                 Debug.Log("El jugador tiene 3 llaves. Cargando la escena NivelBoss.");
                 SceneManager.LoadScene("NivelBoss");
