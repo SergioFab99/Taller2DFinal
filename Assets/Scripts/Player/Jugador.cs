@@ -24,7 +24,6 @@ public class Jugador : MonoBehaviour
     void Update()
     {
         MoverJugador();
-        RotarJugador();
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -58,14 +57,6 @@ public class Jugador : MonoBehaviour
          animacion.SetBool("arriba", false);
         }
     }
-
-
-    void RotarJugador()
-    {
-        
-       
-    }
-
     void AtaqueCuerpoACuerpo()
     {
         Debug.Log("Atacando...");
@@ -84,13 +75,13 @@ public class Jugador : MonoBehaviour
     }
 
 
-    void OnTriggerEnter2D(Collider2D other)
+    /*void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("BulletEnemy"))
         {
             SceneManager.LoadScene("Derrota");
         }
-    }
+    }*/
 
     void OnDrawGizmosSelected()
     {
