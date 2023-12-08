@@ -1,0 +1,2012 @@
+fileFormatVersion: 2
+guid: 3c4cdd5262a17bb469031752d72bef0a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5875104872946173477
+    second: nombres_0
+  - first:
+      213: -8482305188616113575
+    second: nombres_1
+  - first:
+      213: 593938180436530225
+    second: nombres_2
+  - first:
+      213: 7435806931634587121
+    second: nombres_3
+  - first:
+      213: -5612423802537083628
+    second: nombres_4
+  - first:
+      213: 5707640978627518371
+    second: nombres_5
+  - first:
+      213: 2314454537835607908
+    second: nombres_6
+  - first:
+      213: 4641723106807322466
+    second: nombres_7
+  - first:
+      213: -7680699621584646593
+    second: nombres_8
+  - first:
+      213: -816710834273835056
+    second: nombres_9
+  - first:
+      213: -6790699369795159032
+    second: nombres_10
+  - first:
+      213: -7420586305768712322
+    second: nombres_11
+  - first:
+      213: 1774884713322911136
+    second: nombres_12
+  - first:
+      213: -7532547827110405972
+    second: nombres_13
+  - first:
+      213: 3599425097587753377
+    second: nombres_14
+  - first:
+      213: 8058321745792581937
+    second: nombres_15
+  - first:
+      213: -8687983254940657158
+    second: nombres_16
+  - first:
+      213: 8787720045168347600
+    second: nombres_17
+  - first:
+      213: 6008662517289910470
+    second: nombres_18
+  - first:
+      213: 6355759654744038453
+    second: nombres_19
+  - first:
+      213: 4848061066915339831
+    second: nombres_20
+  - first:
+      213: -475125339368338884
+    second: nombres_21
+  - first:
+      213: 3194618431723663083
+    second: nombres_22
+  - first:
+      213: -3768421966687888823
+    second: nombres_23
+  - first:
+      213: 3804942358403831917
+    second: nombres_24
+  - first:
+      213: -392816671757946585
+    second: nombres_25
+  - first:
+      213: -367708070427942015
+    second: nombres_26
+  - first:
+      213: 2999151750524682273
+    second: nombres_27
+  - first:
+      213: 3845616276372192124
+    second: nombres_28
+  - first:
+      213: -1629782743088038643
+    second: nombres_29
+  - first:
+      213: 3362325756776998787
+    second: nombres_30
+  - first:
+      213: -487588858598530276
+    second: nombres_31
+  - first:
+      213: -8381385201803427195
+    second: nombres_32
+  - first:
+      213: 833199205655911303
+    second: nombres_33
+  - first:
+      213: 4314340029710936001
+    second: nombres_34
+  - first:
+      213: -1401953160247794820
+    second: nombres_35
+  - first:
+      213: 8382345403111157308
+    second: nombres_36
+  - first:
+      213: 8326064928797126823
+    second: nombres_37
+  - first:
+      213: -6888492178598882944
+    second: nombres_38
+  - first:
+      213: 1607391202351887658
+    second: nombres_39
+  - first:
+      213: -7107279820338229326
+    second: nombres_40
+  - first:
+      213: 4812612776073778351
+    second: nombres_41
+  - first:
+      213: 4627912026853809503
+    second: nombres_42
+  - first:
+      213: 8341581687678778648
+    second: nombres_43
+  - first:
+      213: -8548726953120986251
+    second: nombres_44
+  - first:
+      213: 7788634856204889816
+    second: nombres_45
+  - first:
+      213: -1248949188346381499
+    second: nombres_46
+  - first:
+      213: -6378298319491603590
+    second: nombres_47
+  - first:
+      213: 8055749707130151862
+    second: nombres_48
+  - first:
+      213: 6292207049835437232
+    second: nombres_49
+  - first:
+      213: -538673892656143793
+    second: nombres_50
+  - first:
+      213: -1389335151903407206
+    second: nombres_51
+  - first:
+      213: 4489247860101078741
+    second: nombres_52
+  - first:
+      213: 1099105946451259371
+    second: nombres_53
+  - first:
+      213: -8195296230792430189
+    second: nombres_54
+  - first:
+      213: -6987231508003175116
+    second: nombres_55
+  - first:
+      213: -943805043949003799
+    second: nombres_56
+  - first:
+      213: -3294602536066989093
+    second: nombres_57
+  - first:
+      213: -7925150537513193320
+    second: nombres_58
+  - first:
+      213: -7905039899347329561
+    second: nombres_59
+  - first:
+      213: -568199614974213436
+    second: nombres_60
+  - first:
+      213: 3381259076045390676
+    second: nombres_61
+  - first:
+      213: 1249270272937184864
+    second: nombres_62
+  - first:
+      213: 2373528842157667241
+    second: nombres_63
+  - first:
+      213: -2586506547625633081
+    second: nombres_64
+  - first:
+      213: 7364063043380812613
+    second: nombres_65
+  - first:
+      213: -224779624560783167
+    second: nombres_66
+  - first:
+      213: -8268198487642165606
+    second: nombres_67
+  - first:
+      213: -7534612302399140685
+    second: nombres_68
+  - first:
+      213: -2384917272927858892
+    second: nombres_69
+  - first:
+      213: -7209883624608174006
+    second: nombres_70
+  - first:
+      213: -3525612173592378788
+    second: nombres_71
+  - first:
+      213: 766164878554016759
+    second: nombres_72
+  - first:
+      213: -1535765786370399189
+    second: nombres_73
+  - first:
+      213: -6593083997007236632
+    second: nombres_74
+  - first:
+      213: -2277756958598930513
+    second: nombres_75
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: nombres_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 101
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5268f1a11c0988150800000000000000
+      internalID: 5875104872946173477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 101
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95275144f5cc84a80800000000000000
+      internalID: -8482305188616113575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 103
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1341677d0a71e3800800000000000000
+      internalID: 593938180436530225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 102
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5877af10b413760800000000000000
+      internalID: 7435806931634587121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_4
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 103
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d74d8994aac12b0800000000000000
+      internalID: -5612423802537083628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_5
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 103
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af5e8cca3d953f40800000000000000
+      internalID: 5707640978627518371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_6
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 103
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4677b70c3289e1020800000000000000
+      internalID: 2314454537835607908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_7
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 102
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26719fe9296ba6040800000000000000
+      internalID: 4641723106807322466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_8
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 103
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e48f4636ca86590800000000000000
+      internalID: -7680699621584646593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_9
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 102
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d725e6c2d57aa4f0800000000000000
+      internalID: -816710834273835056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 103
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80cf3eed6e692c1a0800000000000000
+      internalID: -6790699369795159032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_11
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 85
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7717832218c40990800000000000000
+      internalID: -7420586305768712322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_12
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 86
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a512e63e38a1a810800000000000000
+      internalID: 1774884713322911136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_13
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 85
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca8917f09a3077790800000000000000
+      internalID: -7532547827110405972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_14
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 85
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a108514e0ab3f130800000000000000
+      internalID: 3599425097587753377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_15
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 87
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 131c5c7dee8e4df60800000000000000
+      internalID: 8058321745792581937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_16
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 85
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af958b2b2451e6780800000000000000
+      internalID: -8687983254940657158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_17
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 87
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9c6dd52d044f970800000000000000
+      internalID: 8787720045168347600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_18
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 85
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c0054669be036350800000000000000
+      internalID: 6008662517289910470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_19
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 88
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c17c25bb1343850800000000000000
+      internalID: 6355759654744038453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_20
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 87
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ed3eeaad5c74340800000000000000
+      internalID: 4848061066915339831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_21
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 87
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ac92b65040869f0800000000000000
+      internalID: -475125339368338884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_22
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 68
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beeedcfa980955c20800000000000000
+      internalID: 3194618431723663083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_23
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 69
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94a1acfef20e3bbc0800000000000000
+      internalID: -3768421966687888823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_24
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 68
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d685f7f5aeeddc430800000000000000
+      internalID: 3804942358403831917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_25
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721340a715f6c8af0800000000000000
+      internalID: -392816671757946585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_26
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18329194573a5eaf0800000000000000
+      internalID: -367708070427942015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_27
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 70
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120c38d70a02f9920800000000000000
+      internalID: 2999151750524682273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_28
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 68
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bff9fd0af5e5530800000000000000
+      internalID: 3845616276372192124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_29
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 69
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0dfc29ea39d169e0800000000000000
+      internalID: -1629782743088038643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_30
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 68
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387e6df167169ae20800000000000000
+      internalID: 3362325756776998787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_31
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 69
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13ebc6348cbb39f0800000000000000
+      internalID: -487588858598530276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_32
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5828ac0c0965fab80800000000000000
+      internalID: -8381385201803427195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_33
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 69
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b1248534e109b00800000000000000
+      internalID: 833199205655911303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_34
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 51
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c72b2f066d9fdb30800000000000000
+      internalID: 4314340029710936001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_35
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 51
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73a1b357034b8ce0800000000000000
+      internalID: -1401953160247794820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_36
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 51
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ea1198bb2145470800000000000000
+      internalID: 8382345403111157308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_37
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 50
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a07ac970ff1c8370800000000000000
+      internalID: 8326064928797126823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_38
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 51
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0819e804cd82760a0800000000000000
+      internalID: -6888492178598882944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_39
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 52
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a25b54f38c99e4610800000000000000
+      internalID: 1607391202351887658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_40
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 51
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf007dc8aedd5d90800000000000000
+      internalID: -7107279820338229326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_41
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 51
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4526f42d5d9c240800000000000000
+      internalID: 4812612776073778351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_42
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 54
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d116cf775a93040800000000000000
+      internalID: 4627912026853809503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_43
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 53
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d3ffe695043c370800000000000000
+      internalID: 8341581687678778648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_44
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 52
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b8a651122dc5980800000000000000
+      internalID: -8548726953120986251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_45
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 53
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de6151c22ac61c60800000000000000
+      internalID: 7788634856204889816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_46
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 53
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bf9169457daaee0800000000000000
+      internalID: -1248949188346381499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_47
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 53
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a736b3bd87bbb77a0800000000000000
+      internalID: -6378298319491603590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_48
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 53
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b323fc6da5cbcf60800000000000000
+      internalID: 8055749707130151862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_49
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 52
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc56aa69f8625750800000000000000
+      internalID: 6292207049835437232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_50
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 34
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42247ad2fe3688f0800000000000000
+      internalID: -538673892656143793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_51
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9385d45a0718bce0800000000000000
+      internalID: -1389335151903407206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_52
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 33
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ded10ac4230d4e30800000000000000
+      internalID: 4489247860101078741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_53
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 35
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef2fb4f80fc04f00800000000000000
+      internalID: 1099105946451259371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_54
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 36
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39df486af75744e80800000000000000
+      internalID: -8195296230792430189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_55
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 35
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435cd02a6fd580f90800000000000000
+      internalID: -6987231508003175116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_56
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 35
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb9232205ee6e2f0800000000000000
+      internalID: -943805043949003799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_57
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 34
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd340a1f2783742d0800000000000000
+      internalID: -3294602536066989093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_58
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 35
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 890b70c4395340290800000000000000
+      internalID: -7925150537513193320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_59
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 36
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eddc102818ab4290800000000000000
+      internalID: -7905039899347329561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_60
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 34
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c2c2fbe5795d18f0800000000000000
+      internalID: -568199614974213436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_61
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 37
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45340490735acee20800000000000000
+      internalID: 3381259076045390676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_62
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 34
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e40eeb1bc465110800000000000000
+      internalID: 1249270272937184864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_63
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 18
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3b3fc08e770f020800000000000000
+      internalID: 2373528842157667241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_64
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 19
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca5d83bff1ea1cd0800000000000000
+      internalID: -2586506547625633081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_65
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 20
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b9b4c4258623660800000000000000
+      internalID: 7364063043380812613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_66
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 14
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c01f455f1c61ecf0800000000000000
+      internalID: -224779624560783167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_67
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 20
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9eaaa34845714d80800000000000000
+      internalID: -8268198487642165606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_68
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 18
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc0633f70eaf6790800000000000000
+      internalID: -7534612302399140685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_69
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 18
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43f0178406217eed0800000000000000
+      internalID: -2384917272927858892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_70
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 17
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40f2530b0951fb90800000000000000
+      internalID: -7209883624608174006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_71
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 18
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52cb395862821fc0800000000000000
+      internalID: -3525612173592378788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_72
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 18
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fba791d5e6f1aa00800000000000000
+      internalID: 766164878554016759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_73
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 19
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24a135772ddfaae0800000000000000
+      internalID: -1535765786370399189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_74
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 19
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e132105909a084a0800000000000000
+      internalID: -6593083997007236632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nombres_75
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 18
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf590e3d18c360e0800000000000000
+      internalID: -2277756958598930513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      nombres_0: 5875104872946173477
+      nombres_1: -8482305188616113575
+      nombres_10: -6790699369795159032
+      nombres_11: -7420586305768712322
+      nombres_12: 1774884713322911136
+      nombres_13: -7532547827110405972
+      nombres_14: 3599425097587753377
+      nombres_15: 8058321745792581937
+      nombres_16: -8687983254940657158
+      nombres_17: 8787720045168347600
+      nombres_18: 6008662517289910470
+      nombres_19: 6355759654744038453
+      nombres_2: 593938180436530225
+      nombres_20: 4848061066915339831
+      nombres_21: -475125339368338884
+      nombres_22: 3194618431723663083
+      nombres_23: -3768421966687888823
+      nombres_24: 3804942358403831917
+      nombres_25: -392816671757946585
+      nombres_26: -367708070427942015
+      nombres_27: 2999151750524682273
+      nombres_28: 3845616276372192124
+      nombres_29: -1629782743088038643
+      nombres_3: 7435806931634587121
+      nombres_30: 3362325756776998787
+      nombres_31: -487588858598530276
+      nombres_32: -8381385201803427195
+      nombres_33: 833199205655911303
+      nombres_34: 4314340029710936001
+      nombres_35: -1401953160247794820
+      nombres_36: 8382345403111157308
+      nombres_37: 8326064928797126823
+      nombres_38: -6888492178598882944
+      nombres_39: 1607391202351887658
+      nombres_4: -5612423802537083628
+      nombres_40: -7107279820338229326
+      nombres_41: 4812612776073778351
+      nombres_42: 4627912026853809503
+      nombres_43: 8341581687678778648
+      nombres_44: -8548726953120986251
+      nombres_45: 7788634856204889816
+      nombres_46: -1248949188346381499
+      nombres_47: -6378298319491603590
+      nombres_48: 8055749707130151862
+      nombres_49: 6292207049835437232
+      nombres_5: 5707640978627518371
+      nombres_50: -538673892656143793
+      nombres_51: -1389335151903407206
+      nombres_52: 4489247860101078741
+      nombres_53: 1099105946451259371
+      nombres_54: -8195296230792430189
+      nombres_55: -6987231508003175116
+      nombres_56: -943805043949003799
+      nombres_57: -3294602536066989093
+      nombres_58: -7925150537513193320
+      nombres_59: -7905039899347329561
+      nombres_6: 2314454537835607908
+      nombres_60: -568199614974213436
+      nombres_61: 3381259076045390676
+      nombres_62: 1249270272937184864
+      nombres_63: 2373528842157667241
+      nombres_64: -2586506547625633081
+      nombres_65: 7364063043380812613
+      nombres_66: -224779624560783167
+      nombres_67: -8268198487642165606
+      nombres_68: -7534612302399140685
+      nombres_69: -2384917272927858892
+      nombres_7: 4641723106807322466
+      nombres_70: -7209883624608174006
+      nombres_71: -3525612173592378788
+      nombres_72: 766164878554016759
+      nombres_73: -1535765786370399189
+      nombres_74: -6593083997007236632
+      nombres_75: -2277756958598930513
+      nombres_8: -7680699621584646593
+      nombres_9: -816710834273835056
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
