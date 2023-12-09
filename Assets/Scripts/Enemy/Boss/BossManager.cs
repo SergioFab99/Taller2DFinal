@@ -121,7 +121,6 @@ public class BossManager : MonoBehaviour
         if (collision.CompareTag("Bala"))
         {
             life -= 5;
-            Destroy(collision.gameObject);
         }
     }
 }

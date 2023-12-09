@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Nivel1.unity
     guid: 3a820dafca5fd6e439d42b569a5f98df
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NivelBoss.unity
     guid: 64587ed0c0eadef4fb30e97d29d8243d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -25,6 +25,6 @@ EditorBuildSettings:
     guid: 334c60f79d373f84189b0423535d1372
   - enabled: 1
     path: Assets/Scenes/Derrota.unity
-    guid: 1762907fd72faff47a06066e0884096e
+    guid: 73701bce51cd358489c316fdd39a0dfb
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
