@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - key
   - EventTrigger
+  - Megafono1
+  - ActivarTxt1
   layers:
   - Default
   - TransparentFX
