@@ -11,6 +11,7 @@ public class ControladorTexto : MonoBehaviour
     public bool activar;
     public AudioClip clip1;
     public BoxCollider2D col;
+    public Animator animar;
 
     void Start()
     {
@@ -22,7 +23,10 @@ public class ControladorTexto : MonoBehaviour
         {
             StartCoroutine(CambiarTextoDespuesDeEspera());
             activar = false;
+            
         }
+
+      
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -30,6 +34,8 @@ public class ControladorTexto : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             activar = true;
+            animar.SetBool("Animarlo", true);
+
         }
     }
 
@@ -38,9 +44,10 @@ public class ControladorTexto : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             (col).enabled = false;
+
         }
     }
-
+    
     IEnumerator CambiarTextoDespuesDeEspera()
     {
         sonido.PlayOneShot(clip1);
@@ -52,6 +59,7 @@ public class ControladorTexto : MonoBehaviour
         yield return new WaitForSeconds(5f);
         TextoFuncion("Tienes que encontrar la entrada y rescatarnos, por favor");
         yield return new WaitForSeconds(5f);
+        animar.SetBool("Animarlo", false);
         TextoFuncion(" ");
         sonido.Stop();
     }
