@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        Destroy(gameObject, 5);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -18,12 +19,12 @@ public class Bullet : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
-
+            Debug.Log("Enemigo");
             // Destruye al enemigo
             Destroy(collision.gameObject);
 
             // Destruye la bala    
-            Destroy(gameObject);
+            DestroyBullet();
 
         }
 
@@ -38,5 +39,12 @@ public class Bullet : MonoBehaviour
     void FixedUpdate()
     {
         rigidbody.MovePosition(transform.position + transform.right * speed * Time.fixedDeltaTime);
+    }
+
+    public void DestroyBullet()
+    {
+        Debug.Log("dadada");
+        GetComponent<BoxCollider2D>().enabled = false;
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 }

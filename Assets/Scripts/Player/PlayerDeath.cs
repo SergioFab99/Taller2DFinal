@@ -7,7 +7,7 @@ public class PlayerDeath : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("BulletEnemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             SceneManager.LoadScene("Derrota");
         }
