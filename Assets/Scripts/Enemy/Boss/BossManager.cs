@@ -6,10 +6,19 @@ using UnityEngine;
 
 public class BossManager : MonoBehaviour
 {
-    [SerializeField] Transform[] DashesPositions;
-    int life = 100;
+    [SerializeField] private Transform[] dashesPositions;
+    [SerializeField] private int life = 100;
+    [SerializeField] private float moveSpeed;
     Rigidbody2D rb2d;
-    int RateValue = 1;
+    private float currentActivityTimer;
+    private float resetTimer = 5;
+
+    bool ableToMove;
+    Transform Target;
+
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject zombiePrefab;
+    [SerializeField] private Transform shootingPoint;
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -19,6 +28,15 @@ public class BossManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (ableToMove)
+        {
+            Vector2 newPos = Vector2.MoveTowards(transform.position, Target.position, Time.deltaTime * moveSpeed);
+            rb2d.MovePosition(newPos);
+            if(Vector2.Distance(transform.position, Target.position) < 0.8)
+            {
+                ableToMove = false;
+            }
+        }
         //debuging
         if(Input.GetKeyDown(KeyCode.Space))
         {
@@ -32,25 +50,22 @@ public class BossManager : MonoBehaviour
             Attack();
             yield return new WaitForSeconds(3);
         }
-        DoRushAtack();
         while(life>75)
         {
             Attack();
             yield return new WaitForSeconds(3);
         }
-        RateValue++;
+        RushAtack();
         while (life>50)
         {
             Attack();
             yield return new WaitForSeconds(3);
         }
-        RateValue++;
         while (life>20)
         {
             Attack();
             yield return new WaitForSeconds(3);
         }
-        RateValue++;
         while (life>1)
         {
             Attack();
@@ -59,38 +74,50 @@ public class BossManager : MonoBehaviour
         TriggerWin();
         Destroy(gameObject);
     }
-    void DoRushAtack()
-    {
-        Debug.Log("Doing Rush Attack");
-    }
     void TriggerWin()
     {
         Debug.Log("Ganate");
     }
     void Attack()
     {
-        int n = Mathf.FloorToInt(UnityEngine.Random.Range(1, RateValue+1));
-        Debug.Log(n);
+        int n = Mathf.FloorToInt(UnityEngine.Random.Range(1, 3));
         switch(n)
         {
             case 1:
-                Debug.Log($"Do Attack {n}");;
+                Debug.Log($"Do Attack Movement");
+                MoveAttack();
                 break;
             case 2:
-                Debug.Log($"Do Attack {n}");
-                break;
-            case 3:
-                Debug.Log($"Do Attack {n}");
-                break;
-            case 4:
-                Debug.Log($"Do Attack {n}");
-                break;
-            case 5:
-                Debug.Log($"Do Attack {n}");
-                break;
-            case 6:
-                Debug.Log($"Do Attack {n}");
+                Debug.Log($"Do Attack Shoot");
+                ShootAttack();
                 break;
         }
+    }
+    private void MoveAttack()
+    {
+        StartCoroutine(startCurrentActivityTimer());
+        int random = UnityEngine.Random.Range(0, dashesPositions.Length);
+        Target = dashesPositions[random];
+        ableToMove = true;
+    }
+    private void ShootAttack()
+    {
+            GameObject bullet = Instantiate(bulletPrefab);
+            bullet.transform.position = shootingPoint.position;
+            bullet.transform.rotation = transform.rotation;
+            Destroy(bullet, 2f);
+    }
+    private void RushAtack()
+    {
+        Debug.Log("Doing Rush Attack");
+    }
+    private void InvokeAttack()
+    {
+
+    }
+    IEnumerator startCurrentActivityTimer()
+    {
+        currentActivityTimer += Time.deltaTime;
+        yield return null;
     }
 }
