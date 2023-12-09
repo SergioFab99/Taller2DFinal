@@ -5,31 +5,31 @@ using UnityEngine;
 
 public class Jeringa_Use : MonoBehaviour
 {
-    [SerializeField] private bool invulnerable;
+    /* [SerializeField] private bool invulnerable;
 
-    private void Start()
-    {
-        invulnerable = false;
-    }
+     private void Start()
+     {
+         invulnerable = false;
+     }
 
-    public void UsarObjeto()
-    {
-        StartCoroutine(ActivarInvulnerabilidad());
-    }
+     public void UsarObjeto()
+     {
+         StartCoroutine(ActivarInvulnerabilidad());
+     }
 
-    private IEnumerator ActivarInvulnerabilidad()
-    {
-        Debug.Log("Usando Jeringa - activar invulnerabilidad");
-        invulnerable = true;
+     private IEnumerator ActivarInvulnerabilidad()
+     {
+         Debug.Log("Usando Jeringa - activar invulnerabilidad");
+         invulnerable = true;
 
-        yield return new WaitForSeconds(3); // Espera de 3 segundos
+         yield return new WaitForSeconds(3); // Espera de 3 segundos
 
-        invulnerable = false;
-        Debug.Log("Terminar invulnerabilidad");
-    }
+         invulnerable = false;
+         Debug.Log("Terminar invulnerabilidad");
+     }
 
-    public bool EstaInvulnerable()
-    {
-        return invulnerable;
-    }
+     public bool EstaInvulnerable()
+     {
+         return invulnerable;
+     } */
 }

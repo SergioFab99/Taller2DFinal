@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class Jeringa_Main : MonoBehaviour
 {
-    static void Main(string[] args)
+    /*static void Main(string[] args)
     {
         Player myPlayer = new Player();
 
@@ -16,5 +16,5 @@ public class Jeringa_Main : MonoBehaviour
         bool Invulnerableahora = myPlayer.EstaInvulnerable();
         Debug.Log("¿Está Invulnerable?" + Invulnerableahora);
 
-    }
+    }*/
 }
