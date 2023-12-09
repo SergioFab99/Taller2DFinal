@@ -32,7 +32,7 @@ public class BossManager : MonoBehaviour
         {
             Vector2 newPos = Vector2.MoveTowards(transform.position, Target.position, Time.deltaTime * moveSpeed);
             rb2d.MovePosition(newPos);
-            if(Vector2.Distance(transform.position, Target.position) < 0.8)
+            if(Vector2.Distance(transform.position, Target.position) < 0.2)
             {
                 ableToMove = false;
             }
@@ -50,12 +50,12 @@ public class BossManager : MonoBehaviour
             Attack();
             yield return new WaitForSeconds(3);
         }
+        InvokeAttack();
         while(life>75)
         {
             Attack();
             yield return new WaitForSeconds(3);
         }
-        RushAtack();
         while (life>50)
         {
             Attack();
@@ -95,7 +95,6 @@ public class BossManager : MonoBehaviour
     }
     private void MoveAttack()
     {
-        StartCoroutine(startCurrentActivityTimer());
         int random = UnityEngine.Random.Range(0, dashesPositions.Length);
         Target = dashesPositions[random];
         ableToMove = true;
@@ -107,17 +106,8 @@ public class BossManager : MonoBehaviour
             bullet.transform.rotation = transform.rotation;
             Destroy(bullet, 2f);
     }
-    private void RushAtack()
-    {
-        Debug.Log("Doing Rush Attack");
-    }
     private void InvokeAttack()
     {
 
-    }
-    IEnumerator startCurrentActivityTimer()
-    {
-        currentActivityTimer += Time.deltaTime;
-        yield return null;
     }
 }
