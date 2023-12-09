@@ -1,58 +1,51 @@
 using UnityEngine;
 using TMPro;
-
+using System.Collections;
 
 public class ControladorTexto : MonoBehaviour
 {
-  /*  public TextMeshProUGUI textoUI;
-    public GameObject playerColision;
+
+    public TextMeshProUGUI Text;
     public AudioSource sonido;
+    public bool activar;
+    public AudioClip clip1;
 
     void Start()
     {
-        if (textoUI == null)
-        {
-            Debug.LogError("El objeto TextMeshProUGUI no está asignado en el Inspector.");
-        }
-        else
-        {
-            MostrarTexto("");
-        }
 
-        if (sonido == null)
+    }
+    void Update()
+    {
+        if (activar)
         {
-            Debug.LogError("El objeto AudioSource no está asignado en el Inspector.");
+            StartCoroutine(CambiarTextoDespuesDeEspera());
+            activar = false;
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (playerColision.CompareTag("ActivarTxt1"))
+        if (other.CompareTag("Player"))
         {
-                StartCoroutine(CambiarTextoDespuesDeEspera());
-                if (sonido != null)
-                {
-                    sonido.Play();  
-                } 
+            activar = true;
         }
     }
 
-    IEnumerator CambiarTextoDespuesDeEspera()
+       IEnumerator CambiarTextoDespuesDeEspera()
     {
-
-        MostrarTexto("Seishu, hola, soy tu maestra de quimica"); 
+        sonido.PlayOneShot(clip1);
+        TextoFuncion("Seishu, hola, soy tu maestra de quimica");
         yield return new WaitForSeconds(5f);
-        MostrarTexto("Como veras, ha pasado algo muy extraño...");
+        TextoFuncion("Como veras, ha pasado algo muy extraÃ±o...");
         yield return new WaitForSeconds(5f);
-        MostrarTexto("Necesitamos tu ayuda, varios de tus compañeros y yo estamos encerrados abajo del colegio,");
+        TextoFuncion("Necesitamos tu ayuda, varios de tus compaÃ±eros y yo estamos encerrados abajo del colegio,");
         yield return new WaitForSeconds(5f);
-        MostrarTexto("Tienes que encontrar la entrada y rescatarnos, por favor");
+        TextoFuncion("Tienes que encontrar la entrada y rescatarnos, por favor");
+        yield return new WaitForSeconds(5f);
+        sonido.Stop();
     }
-
-    void MostrarTexto(string mensaje)
+    void TextoFuncion(string Texto)
     {
-        textoUI.text = mensaje;
-    } */
+        Text.text = Texto;
+    }
 }
-
-  
