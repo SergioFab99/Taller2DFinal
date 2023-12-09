@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 6456016410410802407}
   - component: {fileID: 8519266425426965602}
   - component: {fileID: 5835328338851064105}
-  - component: {fileID: 3636981536522209849}
   - component: {fileID: 8545884390061846711}
+  - component: {fileID: 6686685540705592240}
   m_Layer: 0
   m_Name: Enemigo
   m_TagString: Enemy
@@ -239,28 +239,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!95 &3636981536522209849
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1694144323481165297}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e59313b8546735945a7db82c51625bcb, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!61 &8545884390061846711
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -307,3 +285,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.24, y: 0.25}
   m_EdgeRadius: 0
+--- !u!114 &6686685540705592240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694144323481165297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff295de8af0b45a4faeed3a2f52fbf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LayersHit:
+    serializedVersion: 2
+    m_Bits: 8
+  AggroDistance: 25
