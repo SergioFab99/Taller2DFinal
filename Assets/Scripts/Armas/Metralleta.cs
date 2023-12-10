@@ -21,6 +21,8 @@ public class Metralleta : MonoBehaviour
     // Escala original de la metralleta
     private Vector3 escalaOriginal;
 
+    [SerializeField] private int munición = 30; // Cantidad inicial de munición
+
     void Start()
     {
         camera = Camera.main; // Busca la cámara principal
@@ -29,15 +31,22 @@ public class Metralleta : MonoBehaviour
         ShootingLeft = GameObject.Find("ShootingLeft").GetComponent<Transform>();
         ShootingRight = GameObject.Find("ShootingRight").GetComponent<Transform>();
     }
-    
+
     void Update()
     {
         RotateTowardsMouse();
 
         if (Input.GetMouseButtonDown(0) && Time.time > tiempoUltimoDisparo + cooldown)
         {
-            StartCoroutine(Rafaga());
-            tiempoUltimoDisparo = Time.time;
+            if (munición >= 3) // Verificar si hay suficiente munición para una ráfaga
+            {
+                StartCoroutine(Rafaga());
+                tiempoUltimoDisparo = Time.time;
+            }
+            else
+            {
+                Debug.Log("Munición insuficiente para una ráfaga");
+            }
         }
     }
 
@@ -53,15 +62,11 @@ public class Metralleta : MonoBehaviour
         {
             transform.position = ShootingLeft.transform.position;
             scale.y = -0.04f;
-            //scale.x = -0.04f;
             transform.localScale = scale;
-
         }
         else
         {
-
             transform.position = ShootingRight.transform.position;
-            //scale.x = 0.04f;
             scale.y = 0.04f;
             transform.localScale = scale;
         }
@@ -80,20 +85,27 @@ public class Metralleta : MonoBehaviour
     {
         for (int i = 0; i < 3; i++)
         {
-            Disparar();
-            yield return new WaitForSeconds(0.1f);
+            if (munición > 0)
+            {
+                Disparar();
+                yield return new WaitForSeconds(0.1f);
+            }
+            else
+            {
+                Debug.Log("Sin munición");
+                break; // Detener la ráfaga si se queda sin munición
+            }
         }
     }
 
     void Disparar()
     {
-         // Realizar el disparo
-            GameObject bullet = Instantiate(bulletPrefab);
-            bullet.GetComponent<Bullet>().ShootSound(SonidoBala);
-            bullet.transform.position = spawner.position;
-            bullet.transform.rotation = transform.rotation;
-            Destroy(bullet, 2f);
-        //GameObject bullet = Instantiate(bulletPrefab, spawner.position, Quaternion.identity);
-        //bullet.GetComponent<Rigidbody2D>().velocity = transform.right * velocidadDisparo;
+        GameObject bullet = Instantiate(bulletPrefab);
+        bullet.GetComponent<Bullet>().ShootSound(SonidoBala);
+        bullet.transform.position = spawner.position;
+        bullet.transform.rotation = transform.rotation;
+        Destroy(bullet, 2f);
+
+        munición--; // Disminuir munición
     }
 }

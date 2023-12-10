@@ -17,9 +17,8 @@ public class PlayerWeapon : MonoBehaviour
     Jugador Jugador;
     Transform ShootingRight;
     Transform ShootingLeft;
-    // Tiempo transcurrido desde el último disparo
+    [SerializeField] private int munición = 10; // Cantidad inicial de munición
 
-    // Start is called before the first frame update
     void Start()
     {
         Jugador = GameObject.Find("Player").GetComponent<Jugador>();
@@ -29,7 +28,6 @@ public class PlayerWeapon : MonoBehaviour
         ShootingRight = GameObject.Find("ShootingRight").GetComponent<Transform>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         RotateTowardsMouse();
@@ -48,15 +46,11 @@ public class PlayerWeapon : MonoBehaviour
         {
             transform.position = ShootingLeft.transform.position;
             scale.y = -0.04f;
-            //scale.x = -0.04f;
             transform.localScale = scale;
-            
         }
         else
         {
-           
             transform.position = ShootingRight.transform.position;
-            //scale.x = 0.04f;
             scale.y = 0.04f;
             transform.localScale = scale;
         }
@@ -77,15 +71,22 @@ public class PlayerWeapon : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && currentCooldown <= 0)
         {
-            // Realizar el disparo
-            GameObject bullet = Instantiate(bulletPrefab);
-            bullet.GetComponent<Bullet>().ShootSound(SonidoBala);
-            bullet.transform.position = spawner.position;
-            bullet.transform.rotation = transform.rotation;
-            Destroy(bullet, 2f);
+            if (munición > 0) // Verificar si hay munición
+            {
+                // Realizar el disparo
+                GameObject bullet = Instantiate(bulletPrefab);
+                bullet.GetComponent<Bullet>().ShootSound(SonidoBala);
+                bullet.transform.position = spawner.position;
+                bullet.transform.rotation = transform.rotation;
+                Destroy(bullet, 2f);
 
-            // Establecer el tiempo de enfriamiento
-            currentCooldown = fireCooldown;
+                munición--; // Disminuir munición
+                currentCooldown = fireCooldown;
+            }
+            else
+            {
+                Debug.Log("Sin munición!"); // Mensaje de alerta
+            }
         }
     }
 }
