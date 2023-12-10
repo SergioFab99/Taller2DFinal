@@ -19,7 +19,6 @@ public class Bullet : MonoBehaviour
 
         if (collision.CompareTag("Enemy"))
         {
-            Debug.Log("Enemigo");
             // Destruye al enemigo
             Destroy(collision.gameObject);
 
@@ -29,7 +28,6 @@ public class Bullet : MonoBehaviour
         }
         if (collision.CompareTag("Boss"))
         {
-            Debug.Log("Boss");
             DestroyBullet();
         }
     }
@@ -54,7 +52,6 @@ public class Bullet : MonoBehaviour
 
     public void DestroyBullet()
     {
-        Debug.Log("dadada");
         GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<CircleCollider2D>().enabled = false;
