@@ -1563,7 +1563,7 @@ MonoBehaviour:
   imagen: {fileID: 1527013252}
   NoBoton: 0
   Entrada: 1
-  Escena: Nivel1
+  Escena: Controles
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
