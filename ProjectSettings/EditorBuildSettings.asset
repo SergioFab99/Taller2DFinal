@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bunker.unity
     guid: 2f831d798b04f044eae6d1e87dce6209
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NivelBoss.unity
     guid: 64587ed0c0eadef4fb30e97d29d8243d
   - enabled: 1

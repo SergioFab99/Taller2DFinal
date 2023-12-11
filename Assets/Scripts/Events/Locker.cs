@@ -19,8 +19,8 @@ public class Locker : MonoBehaviour
     bool Used = false;
     private void Awake()
     {
-        MunicionPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Prefab/Items/Municion.prefab");
-        JeringaPrefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Prefab/Items/Jeringa.prefab");
+        MunicionPrefab = Resources.Load<GameObject>("Municion");
+        JeringaPrefab = Resources.Load<GameObject>("Jeringa");
         Manager = GetComponent<EventManager>();
         UI = LetraE.GetComponent<SpriteRenderer>();
     }

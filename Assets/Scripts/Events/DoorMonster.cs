@@ -11,7 +11,7 @@ public class DoorMonster : BaseEvent
     GameObject Spawn;
     public override void EventTrigger(EventManager manager)
     {
-        Prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Prefab/Enemy/Enemigo/Enemigo.prefab");
+        Prefab = Resources.Load<GameObject>("Enemigo");
         Spawn = GameObject.Instantiate(Prefab);
         Spawn.transform.position = manager.transform.position;
         Spawn.GetComponent<Patrullaje>().ActivateSurprise();
