@@ -119,10 +119,10 @@ TextureImporter:
       name: Pasilloabriendoseanim-Sheet_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 15
-        width: 25
-        height: 49
+        x: 6
+        y: 16
+        width: 23
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +140,10 @@ TextureImporter:
       name: Pasilloabriendoseanim-Sheet_1
       rect:
         serializedVersion: 2
-        x: 69
-        y: 15
-        width: 25
-        height: 49
+        x: 70
+        y: 16
+        width: 23
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,10 +161,10 @@ TextureImporter:
       name: Pasilloabriendoseanim-Sheet_2
       rect:
         serializedVersion: 2
-        x: 133
-        y: 12
-        width: 25
-        height: 52
+        x: 134
+        y: 13
+        width: 23
+        height: 51
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,7 +181,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 127ea485dd453ed4a9095ef6823e7656
     internalID: 0
     vertices: []
     indices: 

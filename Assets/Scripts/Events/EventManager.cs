@@ -24,8 +24,13 @@ public class EventManager : MonoBehaviour
     [SerializeField] private Conditions TriggerCondition;
     BaseEvent SelectedEvent;
     public bool Done = false;
-    void Start()
+    public void ActivateTouchEvent()
     {
+        DetermineCondition();
+        if (TriggerCondition == Conditions.OnTouch)
+        {
+            ActivateEvent(this);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -40,7 +45,6 @@ public class EventManager : MonoBehaviour
     {
         if (!Done)
         {
-            // Debug.Log("Event Activated");
             SelectedEvent = DetermineEvent();  
             SelectedEvent.EventTrigger(manager);
             Done = true;

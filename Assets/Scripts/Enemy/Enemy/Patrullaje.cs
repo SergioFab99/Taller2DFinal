@@ -14,8 +14,6 @@ public class Patrullaje : MonoBehaviour
 
     [SerializeField] LayerMask LayersHit;
     [SerializeField] float AggroDistance = 25;
-
-    int time = 0;
     private void Awake()
     {
         targetList = GameObject.FindGameObjectsWithTag("Patrullaje");
@@ -75,34 +73,18 @@ public class Patrullaje : MonoBehaviour
     }
     public void ActivateSurprise()
     {
-        StartCoroutine(Timer());
         StartCoroutine(Surprise());
-        GetComponent<AIPath>().enabled = false;
+        //GetComponent<AIPath>().enabled = false;
         GetComponent<BoxCollider2D>().enabled = false;
         GetComponent<CapsuleCollider2D>().enabled = false;
     }
-    IEnumerator Timer()
-    {
-        while(time <= 1)
-        {
-            time += 1;
-            yield return new WaitForSeconds(1f);
-        }
-    }
     IEnumerator Surprise()
     {
-        while(time <= 2)
-        {
-            if(time >= 2)
-            {
-                GetComponent<AIPath>().enabled = true;
-                GetComponent<BoxCollider2D>().enabled = true;
-                GetComponent<CapsuleCollider2D>().enabled = true;
-                StopCoroutine(Surprise());
-                StopCoroutine(Timer());
-                UpdateTarget();
-            }
-            yield return null;
-        }
+        yield return new WaitForSeconds(3f);
+        //GetComponent<AIPath>().enabled = true;
+        GetComponent<BoxCollider2D>().enabled = true;
+        GetComponent<CapsuleCollider2D>().enabled = true;
+        StopCoroutine(Surprise());
+        UpdateTarget();
     }
 }
