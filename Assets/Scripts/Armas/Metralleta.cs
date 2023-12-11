@@ -97,6 +97,11 @@ public class Metralleta : MonoBehaviour
             }
         }
     }
+    public void AñadirMunición(int cantidad)
+    {
+        munición += cantidad;
+        // Igual que en PlayerWeapon, aquí puedes gestionar límites o condiciones especiales.
+    }
 
     void Disparar()
     {

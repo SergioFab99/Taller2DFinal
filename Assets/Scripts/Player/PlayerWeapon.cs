@@ -64,6 +64,10 @@ public class PlayerWeapon : MonoBehaviour
         float angle = (Vector3.SignedAngle(Vector3.right, mouseDirection, Vector3.forward) + 360) % 360;
         return angle;
     }
+    public void AñadirMunición(int cantidad)
+    {
+        munición += cantidad;
+    }
 
     private void CheckFiring()
     {
