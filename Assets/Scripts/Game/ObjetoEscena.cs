@@ -20,7 +20,7 @@ public class ObjetoEscena : MonoBehaviour
             {
                 Debug.Log("El jugador tiene 3 llaves. Cargando la escena NivelBoss.");
                 animllaves.SetBool("tres llaves", true);
-                SceneManager.LoadScene("NivelBoss");
+                SceneManager.LoadScene("Bunker");
             }
             else if (GameManager.instance.numLlaves == 2)
             {
