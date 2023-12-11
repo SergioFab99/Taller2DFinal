@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossManager : MonoBehaviour
 {
@@ -70,12 +71,13 @@ public class BossManager : MonoBehaviour
             Attack();
             yield return new WaitForSeconds(3);
         }
-        TriggerWin();
         Destroy(gameObject);
+        yield return new WaitForSeconds(1.5f);
+        TriggerWin();
     }
     void TriggerWin()
     {
-        Debug.Log("Ganate");
+        SceneManager.LoadScene(5);
     }
     void Attack()
     {
