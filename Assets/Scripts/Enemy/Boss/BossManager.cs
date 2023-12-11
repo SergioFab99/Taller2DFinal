@@ -71,13 +71,13 @@ public class BossManager : MonoBehaviour
             Attack();
             yield return new WaitForSeconds(3);
         }
+        TriggerWin();
         Destroy(gameObject);
         yield return new WaitForSeconds(1.5f);
-        TriggerWin();
     }
     void TriggerWin()
     {
-        SceneManager.LoadScene(5);
+        SceneManager.LoadScene("Victoria");
     }
     void Attack()
     {
@@ -122,7 +122,7 @@ public class BossManager : MonoBehaviour
     {
         if (collision.CompareTag("Bala"))
         {
-            life -= 5;
+            life -= 10;
         }
     }
 }

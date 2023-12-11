@@ -476,9 +476,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 72359611}
-        m_TargetAssemblyTypeName: SceneChangerTransition, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 72359616}
+        m_TargetAssemblyTypeName: QuitGame, Assembly-CSharp
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
