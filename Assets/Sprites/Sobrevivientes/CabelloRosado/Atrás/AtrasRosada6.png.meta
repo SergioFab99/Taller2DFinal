@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      AtrasRosada6_0: 9129369203353503161
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

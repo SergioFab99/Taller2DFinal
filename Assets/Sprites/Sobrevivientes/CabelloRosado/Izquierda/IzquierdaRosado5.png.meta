@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IzquierdaRosado5_0: -6072038528153743980
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

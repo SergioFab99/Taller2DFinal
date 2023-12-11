@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DeFrenteRosado4_0: -7810958412682532245
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

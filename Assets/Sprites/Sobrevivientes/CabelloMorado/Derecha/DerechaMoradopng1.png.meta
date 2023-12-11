@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DerechaMoradopng1_0: -5757474744345834235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

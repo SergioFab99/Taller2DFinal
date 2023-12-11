@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DerechaVerde4_0: 1642395473890673552
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DeFrenteMorada3_0: 5660090626020573990
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
