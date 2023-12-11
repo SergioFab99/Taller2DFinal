@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      librero_0: -3035705839881535748
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
