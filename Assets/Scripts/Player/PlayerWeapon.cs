@@ -66,6 +66,7 @@ public class PlayerWeapon : MonoBehaviour
     }
     public void AñadirMunición(int cantidad)
     {
+        Debug.Log("Añadiendo munición");
         munición += cantidad;
     }
 

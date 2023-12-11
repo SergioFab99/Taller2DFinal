@@ -99,6 +99,7 @@ public class Metralleta : MonoBehaviour
     }
     public void AñadirMunición(int cantidad)
     {
+        Debug.Log("Añadiendo munición");
         munición += cantidad;
         // Igual que en PlayerWeapon, aquí puedes gestionar límites o condiciones especiales.
     }
