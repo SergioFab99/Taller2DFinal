@@ -6,15 +6,29 @@ using UnityEngine;
 
 public class Jeringa_Main : MonoBehaviour
 {
-    /*static void Main(string[] args)
+    private Jeringa_Use jeringaUseScript; // Referencia al script Jeringa_Use
+
+    private void Start()
     {
-        Player myPlayer = new Player();
+        // Obtener el componente Jeringa_Use del GameObject actual
+         jeringaUseScript = GetComponent<Jeringa_Use>();
 
-        myPlayer.UsarObjeto();
+        if (jeringaUseScript != null)
+        {
+            ProbarJeringa();
+        }
+        else
+        {
+            UnityEngine.Debug.LogError("No se encontró el componente Jeringa_Use en el GameObject actual.");
+        }
+    }
 
+    private void ProbarJeringa()
+    {
+        
+        jeringaUseScript.UsarJeringa();
 
-        bool Invulnerableahora = myPlayer.EstaInvulnerable();
-        Debug.Log("¿Está Invulnerable?" + Invulnerableahora);
-
-    }*/
+        bool invulnerableAhora = jeringaUseScript.EstaInvulnerable();
+        UnityEngine.Debug.Log("¿Está Invulnerable? " + invulnerableAhora);
+    }
 }

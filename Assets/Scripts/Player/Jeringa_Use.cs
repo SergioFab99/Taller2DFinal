@@ -5,31 +5,62 @@ using UnityEngine;
 
 public class Jeringa_Use : MonoBehaviour
 {
-    /* [SerializeField] private bool invulnerable;
+    public GameObject jeringaPrefab;
+    private bool invulnerable;
+    private Animator animator;
+    private float cooldownTime = 15f;
+    private bool canUseJeringa = true;
 
-     private void Start()
-     {
-         invulnerable = false;
-     }
+    private void Start()
+    {
+        invulnerable = false;
+        animator = GetComponent<Animator>();
+    }
 
-     public void UsarObjeto()
-     {
-         StartCoroutine(ActivarInvulnerabilidad());
-     }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.J) && canUseJeringa)
+        {
+            UsarJeringa();
+        }
+    }
 
-     private IEnumerator ActivarInvulnerabilidad()
-     {
-         Debug.Log("Usando Jeringa - activar invulnerabilidad");
-         invulnerable = true;
+    public void UsarJeringa()
+    {
+        if (!invulnerable)
+        {
+            
+            GameObject jeringaInstance = Instantiate(jeringaPrefab, transform.position, Quaternion.identity);
 
-         yield return new WaitForSeconds(3); // Espera de 3 segundos
+           
+            jeringaInstance.transform.parent = transform;
 
-         invulnerable = false;
-         Debug.Log("Terminar invulnerabilidad");
-     }
+            StartCoroutine(ActivarInvulnerabilidad());
+            if (animator != null)
+            {
+                animator.SetBool("Invulnerable", true);
+            }
+        }
+    }
 
-     public bool EstaInvulnerable()
-     {
-         return invulnerable;
-     } */
+    private IEnumerator ActivarInvulnerabilidad()
+    {
+        UnityEngine.Debug.Log("Usando Jeringa - activar invulnerabilidad");
+        invulnerable = true;
+
+        yield return new WaitForSeconds(10);
+
+        invulnerable = false;
+        UnityEngine.Debug.Log("Terminar invulnerabilidad");
+
+        if (animator != null)
+        {
+            animator.SetBool("Invulnerable", false);
+        }
+    }
+
+    public bool EstaInvulnerable()
+    {
+        return invulnerable;
+    }
 }
