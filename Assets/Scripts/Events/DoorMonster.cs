@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -10,10 +11,9 @@ public class DoorMonster : BaseEvent
     GameObject Spawn;
     public override void EventTrigger(EventManager manager)
     {
-        Prefab = Resources.Load<GameObject>("Enemy");
+        Prefab = AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Prefab/Enemy/Enemigo/Enemigo.prefab");
         Spawn = GameObject.Instantiate(Prefab);
         Spawn.transform.position = manager.transform.position;
-        // Spawn.GetComponent<EnemyPathfindign>().ActivateSurprise();
-        
+        Spawn.GetComponent<Patrullaje>().ActivateSurprise();
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ItemDetection : MonoBehaviour
 {
+    /*
     Inventario Inventario;
     private void Awake()
     {
@@ -27,4 +28,5 @@ public class ItemDetection : MonoBehaviour
             droppedItem.SetUnpickAble();
         }
     }
+    */
 }

@@ -7,7 +7,7 @@ public class GhostEvent : BaseEvent
     private GameObject Prefab;
     public override void EventTrigger(EventManager manager)
     {
-        Prefab = Resources.Load<GameObject>("GhostEnemy");
+        Prefab = Resources.Load<GameObject>("Ghost_Enemy");
         GameObject spawn = GameObject.Instantiate(Prefab);
         spawn.transform.position = manager.transform.position;
         GameObject.Destroy(spawn, 2);

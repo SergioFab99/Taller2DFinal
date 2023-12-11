@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class DroppedItem : MonoBehaviour
 {
+    /*
     public bool ispickable;
     SpriteRenderer spriteRenderer;
     Inventario inventario;
-    Item ItemDropped;
     [SerializeField] private bool SetDrop;
+
+    private void Awake()
+    {
+        if(!SetDrop)
+        {
+            Randomize();
+        }
+    }
 
     void Start()
     {
@@ -25,7 +33,7 @@ public class DroppedItem : MonoBehaviour
             {
                 if(!inventario.IsInventoryFull())
                 {
-                    inventario.PickupItem(ItemDropped);
+                    //inventario.PickupItem(ItemDropped);
                     Destroy(gameObject);
                 }
             }
@@ -34,7 +42,7 @@ public class DroppedItem : MonoBehaviour
     public void SetPickAble()
     {
         ispickable = true;
-        spriteRenderer.color = ItemDropped.GetColor();
+        //spriteRenderer.color = ItemDropped.GetColor();
     }
     public void SetUnpickAble()
     {
@@ -50,12 +58,13 @@ public class DroppedItem : MonoBehaviour
             switch (num)
             {
                 case int i when i > 5:
-                    ItemDropped = new Jernga();
+                    //ItemDropped = new Jernga();
                     break;
                 case int i when i <= 5:
-                    ItemDropped = new MunicionExtra();
+                    //ItemDropped = new MunicionExtra();
                     break;
             }
         }
     }
+    */
 }

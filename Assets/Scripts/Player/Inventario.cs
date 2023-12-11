@@ -11,8 +11,9 @@ using UnityEngine.UIElements;
 
 public class Inventario : MonoBehaviour
 {
+    /*
     //Logic
-    Item[] Slots;
+    //Item[] Slots;
     int SelectedSlot = 0;
     //UI
     [SerializeField] GameObject UISlot1;
@@ -25,7 +26,7 @@ public class Inventario : MonoBehaviour
     private void Awake()
     {
 
-        Slots = new Item[3];
+        //Slots = new Item[3];
         Slots[0] = null;
         Slots[1] = null;
         Slots[2] = null;
@@ -112,7 +113,7 @@ public class Inventario : MonoBehaviour
         UpdateSelected();
     }
 
-    public void PickupItem(Item PickedItem)
+    /*public void PickupItem(Item PickedItem)
     {
         for (int i = 0; i < Slots.Length; i++)
         {
@@ -134,5 +135,5 @@ public class Inventario : MonoBehaviour
         {
             return true;
         }
-    }
+    }*/
 }
