@@ -709,7 +709,7 @@ MonoBehaviour:
   imagen: {fileID: 1527013252}
   NoBoton: 0
   Entrada: 1
-  Escena: "Cr\xE9ditos"
+  Escena: Creditos
 --- !u!1 &553399893
 GameObject:
   m_ObjectHideFlags: 0
