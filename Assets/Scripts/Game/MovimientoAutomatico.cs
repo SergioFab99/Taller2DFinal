@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class MovimientoAutomatico : MonoBehaviour
 {
-
-    public GameObject player, direccion1, direccion2, direccion3;
-     bool Seguir;
+    public GameObject player, direccion1, direccion2, direccion3, direccion4, direccion5;
+    bool Seguir;
     float angulo;
     float angulo2;
-    bool Patron1, Patron2, Patron3, termina;
+    bool Patron1, Patron2, Patron3, Patron4, Patron5, termina;
     public bool Siguiendo, Sangrando = true;
     public float Velocidad;
     Rigidbody2D rgb;
@@ -18,9 +17,9 @@ public class MovimientoAutomatico : MonoBehaviour
     public float PosicionCompaL;
     BoxCollider2D Area;
     CapsuleCollider2D Box;
-    int direccionAnimator,direccionanimator2,direccionanimator3 = 0;
+    int direccionAnimator, direccionanimator2, direccionanimator3, direccionanimator4, direccionanimator5 = 0;
     Animator anim;
-   
+
     void Start()
     {
         Seguir = false;
@@ -33,6 +32,8 @@ public class MovimientoAutomatico : MonoBehaviour
         OnTriggerEnter2D(Area);
         Box = GetComponent<CapsuleCollider2D>();
         anim = GetComponent<Animator>();
+        rgbSobreviviente.constraints = RigidbodyConstraints2D.FreezeAll;
+
 
     }
 
@@ -46,6 +47,7 @@ public class MovimientoAutomatico : MonoBehaviour
         {
             Seguir = true;
             Area.enabled = false;
+
             if (Seguir && Siguiendo)
             {
                 Patron1 = true;
@@ -92,10 +94,10 @@ public class MovimientoAutomatico : MonoBehaviour
             {
                 Patron2 = true;
             }
-            
-        } 
-        
-    
+
+        }
+
+
         if (Patron2)
         {
             Sangrando = true;
@@ -130,6 +132,12 @@ public class MovimientoAutomatico : MonoBehaviour
 
 
                 }
+                else
+                {
+                    anim.SetInteger("Direccion", 0);
+                    anim.SetBool("Seguir", false);
+                    termina = true;
+                }
             }
         }
         if (Patron3)
@@ -159,22 +167,107 @@ public class MovimientoAutomatico : MonoBehaviour
             if (Vector2.Distance(transform.position, direccion3.transform.position) <= umbral)
             {
                 Patron3 = false;
+                if (direccion4 == null)
+                {
+                    anim.SetInteger("Direccion", 0);
+                    anim.SetBool("Seguir", false);
+                    termina = true;
+                }
+                else
+                {
+                    Patron4 = true;
+                }
+            }
+        }
+        if (Patron4)
+        {
+
+            Vector2 direccionCamino4 = (direccion4.transform.position - transform.position).normalized;
+
+            gameObject.transform.Translate(direccionCamino4 * Time.fixedDeltaTime * Velocidad);
+            angulo = Mathf.Atan2(direccionCamino4.y, direccionCamino4.x) * Mathf.Rad2Deg;
+            if (angulo > -45f && angulo <= 45f)
+            {
+                direccionanimator4 = 2; //derecha
+            }
+            else if (angulo > 45f && angulo <= 135f)
+            {
+                direccionanimator4 = 3; // arriba
+            }
+            else if (angulo > -135 && angulo <= -45f)
+            {
+                direccionanimator4 = 1; // abajo
+            }
+            else
+            {
+                direccionanimator4 = 4; // izquierda
+            }
+            anim.SetInteger("Direccion", direccionanimator4);
+            anim.SetBool("Seguir", Seguir);
+            if (Vector2.Distance(transform.position, direccion4.transform.position) <= umbral)
+            {
+                Patron4 = false;
+                if (direccion5 != null)
+                {
+                    Patron5 = true;
+
+
+                }
+                else
+                {
+                    anim.SetInteger("Direccion", 0);
+                    anim.SetBool("Seguir", false);
+                    termina = true;
+                }
+            }
+        }
+        if (Patron5)
+        {
+
+            Vector2 direccionCamino5 = (direccion5.transform.position - transform.position).normalized;
+
+            gameObject.transform.Translate(direccionCamino5 * Time.fixedDeltaTime * Velocidad);
+            angulo = Mathf.Atan2(direccionCamino5.y, direccionCamino5.x) * Mathf.Rad2Deg;
+            if (angulo > -45f && angulo <= 45f)
+            {
+                direccionanimator5 = 2; //derecha
+            }
+            else if (angulo > 45f && angulo <= 135f)
+            {
+                direccionanimator5 = 3; // arriba
+            }
+            else if (angulo > -135 && angulo <= -45f)
+            {
+                direccionanimator5 = 1; // abajo
+            }
+            else
+            {
+                direccionanimator5 = 4; // izquierda
+            }
+            anim.SetInteger("Direccion", direccionanimator5);
+            anim.SetBool("Seguir", Seguir);
+            if (Vector2.Distance(transform.position, direccion5.transform.position) <= umbral)
+            {
+                Patron5 = false;
+
+
                 anim.SetInteger("Direccion", 0);
                 anim.SetBool("Seguir", false);
                 termina = true;
+
             }
         }
 
 
-        }
+    }
 
-    
+
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             Siguiendo = true;
         }
     }
-}
 
+}
