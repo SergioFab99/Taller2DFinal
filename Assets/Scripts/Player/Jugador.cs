@@ -11,7 +11,7 @@ public class Jugador : MonoBehaviour
     Animator animacion;
 
     private Rigidbody2D rb2d;
-    private bool mirandoDerecha = true;
+    //private bool mirandoDerecha = true;
     private Camera cam;
 
     void Start()
