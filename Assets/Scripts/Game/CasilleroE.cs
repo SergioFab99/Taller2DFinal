@@ -41,7 +41,7 @@ public class CasilleroE : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             anim.SetBool("Presionado", false);
-
+            dentro=false;
             letra.SetActive(false);
         }
     }
