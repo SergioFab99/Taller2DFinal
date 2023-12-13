@@ -20,6 +20,13 @@ public class BossManager : MonoBehaviour
     [SerializeField] private GameObject zombiePrefab;
     [SerializeField] private Transform shootingPoint;
 
+    //booleanos
+    private bool isMovingRight;
+    private bool isMovingLeft;
+    private bool isMovingUp;
+    private bool isMovingDown;
+    private bool isIdle;
+
     GameObject Player;
     void Start()
     {
@@ -35,16 +42,74 @@ public class BossManager : MonoBehaviour
         {
             Vector2 newPos = Vector2.MoveTowards(transform.position, Target.position, Time.deltaTime * moveSpeed);
             rb2d.MovePosition(newPos);
-            if(Vector2.Distance(transform.position, Target.position) < 0.2)
+            if (Vector2.Distance(transform.position, Target.position) < 0.2)
+            {
+                ableToMove = false;
+                SetAnimationBooleans(false); // Desactiva todos los booleanos de animación
+            }
+            else
+            {
+                SetAnimationBooleans(true); // Activa los booleanos de animación según la dirección
+            }
+        }
+
+        if (ableToMove)
+        {
+            Vector2 newPos = Vector2.MoveTowards(transform.position, Target.position, Time.deltaTime * moveSpeed);
+            rb2d.MovePosition(newPos);
+            if (Vector2.Distance(transform.position, Target.position) < 0.2)
             {
                 ableToMove = false;
             }
         }
         //debuging
-        if(Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             life -= 5;
         }
+    }
+
+    private void SetAnimationBooleans(bool isActive)
+    {
+        if (isMovingRight && isMovingUp)
+        {
+            Debug.Log("caminandoderechaabajo");
+            GetComponent<Animator>().SetBool("Right", isActive);
+            
+        }
+
+        if (isMovingRight && isMovingDown)
+        {
+            Debug.Log("caminandoderechaabajo");
+            GetComponent<Animator>().SetBool("Right", isActive);
+
+        }
+
+        if (isMovingLeft)
+        {
+            GetComponent<Animator>().SetBool("Left", isActive);
+            Debug.Log("caminandoizquierda");
+        }
+           
+        if (isMovingUp)
+        {
+            GetComponent<Animator>().SetBool("Up", isActive);
+            Debug.Log("caminandoarriba");
+        }
+            
+        if (isMovingDown)
+        {
+            GetComponent<Animator>().SetBool("Down", isActive);
+            Debug.Log("caminandoabajo");
+        }
+        if (isIdle)
+        {
+            GetComponent<Animator>().SetBool("Idle", isActive);
+            Debug.Log("idle");
+        }
+
+
+
     }
     IEnumerator BossFight()
     {
@@ -96,9 +161,21 @@ public class BossManager : MonoBehaviour
     }
     private void MoveAttack()
     {
+        /*int random = UnityEngine.Random.Range(0, dashesPositions.Length);
+        Target = dashesPositions[random];
+        ableToMove = true;*/
+
         int random = UnityEngine.Random.Range(0, dashesPositions.Length);
         Target = dashesPositions[random];
         ableToMove = true;
+
+        Vector2 direction = (Target.position - transform.position).normalized;
+
+        isMovingRight = direction.x > 0.1;
+        isMovingLeft = direction.x < 0.1;
+        isMovingUp = direction.y > 0.1;
+        isMovingDown = direction.y < 0.1;
+        isIdle = direction.y == 0;
     }
     private void ShootAttack()
     {
