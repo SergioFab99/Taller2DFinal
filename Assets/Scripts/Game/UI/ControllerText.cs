@@ -7,6 +7,7 @@ public class ControladorTexto : MonoBehaviour
 {
 
     public TextMeshProUGUI Text;
+    public TextMeshProUGUI TextMision;
     public AudioSource sonido;
     public bool activar;
     public AudioClip clip1;
@@ -61,6 +62,7 @@ public class ControladorTexto : MonoBehaviour
         yield return new WaitForSeconds(5f);
         animar.SetBool("Animarlo", false);
         TextoFuncion(" ");
+        TextMision.text = ("Encuentra las llaves (0/3");
         sonido.Stop();
     }
     void TextoFuncion(string Texto)
