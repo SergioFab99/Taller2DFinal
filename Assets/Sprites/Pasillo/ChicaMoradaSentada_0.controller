@@ -86,7 +86,7 @@ AnimatorController:
   m_Name: ChicaMoradaSentada_0
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Viva
+  - m_Name: Curada
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -120,7 +120,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: Viva
+    m_ConditionEvent: Curada
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -568817705062506469}
@@ -175,7 +175,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -568817705062506469}
-    m_Position: {x: 340, y: 70, z: 0}
+    m_Position: {x: 340, y: 60, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3314354910574760594}
     m_Position: {x: 340, y: 160, z: 0}

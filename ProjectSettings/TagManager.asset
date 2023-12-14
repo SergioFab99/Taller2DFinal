@@ -13,6 +13,8 @@ TagManager:
   - Item
   - Boss
   - Patrullaje
+  - Survivor
+  - Botiquin
   layers:
   - Default
   - TransparentFX

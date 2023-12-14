@@ -9,62 +9,110 @@ public class Ayudalo : MonoBehaviour
     public TextMeshProUGUI textMesh;
     public GameObject letra;
     public GameObject afirma;
-    public bool curada;
+    public bool muerta;
     public bool dentro;
     public bool misionaceptada;
+    public Contador contador;
+    public bool misionterminada;
 
     void Start()
     {
-        
+        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+        {
+            contador = jugador.GetComponent<Contador>();
+        }
+        else
+        {
+            Debug.LogError("No se encontró el objeto del jugador.");
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
+            if(!muerta)
+            {
+                dentro = true;
+                letra.SetActive(true);
+            }
 
-            dentro = true;
-            letra.SetActive(true);
-            
+        }
+        if (collision.CompareTag("Bala"))
+        {
+            animator.SetBool("Muerta", true);
+            muerta = true;
+            Destroy(collision.gameObject);
+            letra.SetActive(false);
+            afirma.SetActive(false);
+            textMesh.text = "Fallaste.";
+
         }
     }
-
+    
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-           
             dentro = false;
             letra.SetActive(false);
         }
     }
     void Update()
     {
-        if (dentro)
+        if(!muerta)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (dentro)
             {
-                textMesh.text = "Encuentra un botiquin y ayudala";
-                afirma.SetActive(false);
-                letra.SetActive(false);
-                misionaceptada = true;
+                if (!misionterminada)
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        textMesh.text = "Encuentra un botiquin y ayudala.";
+                        afirma.SetActive(false);
+                        misionaceptada = true;
+                    }
+
+                }
+            }
+            if (dentro)
+            {
+                if (misionaceptada)
+                {
+                    if (!misionterminada)
+                    {
+                        if (contador.contador == 1)
+                        {
+                            usarbotiquin();
+                        }
+                    }
+
+                }
             }
         }
     }
+        
 
     void usarbotiquin()
     {
-        if (dentro)
-
-            if(misionaceptada)
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            contador.contador = 0;
+            contador.UpdateBotiquinText();
+            animator.SetBool("Curada", true);
+            misionterminada = true;
+            textMesh.text = "Completo.";
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    textMesh.text = "Encuentra un botiquin y ayudala";
-                    afirma.SetActive(false);
-                    letra.SetActive(false);
-                }
+                Debug.Log("notienes");
+                //letra.SetActive(false);
             }
-        
+
+        }
+
     }
 }

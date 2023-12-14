@@ -134,6 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78acda52bc6f3034d9b485ec1a52a238, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jeringaPrefab: {fileID: 5360429611077452881}
 --- !u!58 &5666222487355989849
 CircleCollider2D:
   m_ObjectHideFlags: 0
