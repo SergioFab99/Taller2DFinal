@@ -8,7 +8,7 @@ public class Jeringa_Use : MonoBehaviour
     public GameObject jeringaPrefab;
     private bool invulnerable;
     private Animator animator;
-    private float cooldownTime = 15f;
+    //private float cooldownTime = 15f;
     private bool canUseJeringa = true;
 
     private void Start()

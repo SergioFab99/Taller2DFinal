@@ -5,11 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class PlayerDeath : MonoBehaviour
 {
+    public ContadorJeringa contador;
+    public void Start()
+    {
+        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+        {
+            contador = jugador.GetComponent<ContadorJeringa>();
+        }
+        else
+        {
+            Debug.LogError("No se encontró el objeto del jugador.");
+        }
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))
+        if (!contador.usando)
         {
-            SceneManager.LoadScene("Derrota");
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                SceneManager.LoadScene("Derrota");
+            }
         }
+        else
+        {
+            if (other.gameObject.CompareTag("Enemy"))
+            {
+                Destroy(other.gameObject);
+                contador.usando = false;
+            }
+        }
+        
     }
 }

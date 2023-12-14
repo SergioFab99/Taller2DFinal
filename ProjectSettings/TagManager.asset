@@ -15,6 +15,7 @@ TagManager:
   - Patrullaje
   - Survivor
   - Botiquin
+  - Jeringa
   layers:
   - Default
   - TransparentFX
