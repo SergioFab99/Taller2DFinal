@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public int numLlaves = 0;
     public GameObject ObjetoEscena;
+    public TextMeshProUGUI contadorllaves;
 
     void Awake()
     {
@@ -24,6 +26,7 @@ public class GameManager : MonoBehaviour
     {
         numLlaves++;
         Debug.Log("Has recolectado una llave! Ahora tienes " + numLlaves + " llaves.");
+        contadorllaves.text = "Ahora tienes " + numLlaves + " llaves";
 
         if (numLlaves == 3)
         {
