@@ -32,6 +32,8 @@ public class PlayerDeath : MonoBehaviour
             if (other.gameObject.CompareTag("Enemy"))
             {
                 Destroy(other.gameObject);
+                contador.corazon.SetBool("Usado", true);
+                contador.corazon.SetBool("Proceso", false);
                 contador.usando = false;
             }
         }

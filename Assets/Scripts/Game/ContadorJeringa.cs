@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ContadorJeringa : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ContadorJeringa : MonoBehaviour
     public int contador = 0;
     public bool usando = false;
     public bool puedeRecoger = true;
+    public Animator corazon;
 
     public void Start()
     {
@@ -65,7 +67,7 @@ public class ContadorJeringa : MonoBehaviour
                 //textMesh.text = " .";
                 contador--;
                 UpdateJeringaTxt();
-                Debug.Log("usando");
+                corazon.SetBool("Proceso",true);
                 usando = true;
 
             }
