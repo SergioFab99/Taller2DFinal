@@ -9,18 +9,33 @@ public class ObjetoEscena : MonoBehaviour
 
     public Animator animllaves;
     public GameObject anim;
+    public GameObject letraE;
+    public Animator bunker;
+    public float time;
+    public bool abierto;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             anim.SetActive(true);
-            Debug.Log("El jugador ha entrado en el trigger.");
 
             if (GameManager.instance.numLlaves == 3)
             {
                 Debug.Log("El jugador tiene 3 llaves. Cargando la escena NivelBoss.");
                 animllaves.SetBool("tres llaves", true);
-                SceneManager.LoadScene("Bunker");
+                abierto = true;
+                bunker.SetBool("Abrir", true);
+                animllaves.SetBool("tresllavesyabrir", true);
+                anim.SetActive(false);
+                letraE.SetActive(true);
+                if (time > 1)
+                {
+                   if(Input.GetKeyDown(KeyCode.E))
+                    {
+                        SceneManager.LoadScene("Bunker");
+                    }
+                }
+                
             }
             else if (GameManager.instance.numLlaves == 2)
             {
@@ -41,6 +56,39 @@ public class ObjetoEscena : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        /*if (other.CompareTag("Player"))
+        {
+            anim.SetActive(true);
+
+            if (GameManager.instance.numLlaves == 3)
+            {
+                Debug.Log("El jugador tiene 3 llaves. Cargando la escena NivelBoss.");
+                animllaves.SetBool("tres llaves", true);
+                animllaves.SetBool("tresllavesyabrir", true);
+                abierto = true;
+
+                if (time > 1)
+                {
+                    bunker.SetBool("Abrir", true);
+                    //SceneManager.LoadScene("Bunker");
+                }
+            }
+        }*/
+    }
+    private void Update()
+    {
+        if(abierto)
+        {
+            time += 1 * Time.deltaTime;
+        }
+        if (abierto && Input.GetKeyDown(KeyCode.E))
+        {
+            SceneManager.LoadScene("Bunker");
+        }
+
+    }
     private void OnTriggerExit2D(Collider2D collision)
     {
         anim.SetActive(false);
