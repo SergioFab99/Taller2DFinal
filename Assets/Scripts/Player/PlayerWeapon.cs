@@ -18,6 +18,11 @@ public class PlayerWeapon : MonoBehaviour
     Transform ShootingRight;
     Transform ShootingLeft;
     [SerializeField] private int munición = 10; // Cantidad inicial de munición
+    void Awake()
+    {
+        //la pistola empezará en false
+        gameObject.SetActive(false);
+    }
 
     void Start()
     {
