@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UIElements;
@@ -18,14 +19,20 @@ public class PlayerWeapon : MonoBehaviour
     Transform ShootingRight;
     Transform ShootingLeft;
     [SerializeField] private int munición = 10; // Cantidad inicial de munición
-
+    public TextMeshProUGUI textmunicion;
     //public Animator animdisparo;
+
+    
     void Awake()
     {
         //la pistola empezará en false
         gameObject.SetActive(false);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
     void Start()
     {
         Jugador = GameObject.Find("Player").GetComponent<Jugador>();
@@ -33,6 +40,8 @@ public class PlayerWeapon : MonoBehaviour
         Player = GameObject.Find("Player");
         ShootingLeft = GameObject.Find("ShootingLeft").GetComponent<Transform>();
         ShootingRight = GameObject.Find("ShootingRight").GetComponent<Transform>();
+
+        textmunicion.text = "10";
     }
 
     void Update()
@@ -75,6 +84,7 @@ public class PlayerWeapon : MonoBehaviour
     {
         Debug.Log("Añadiendo munición");
         munición += cantidad;
+        textmunicion.text = "10";
     }
 
     private void CheckFiring()
@@ -95,6 +105,7 @@ public class PlayerWeapon : MonoBehaviour
                 Destroy(bullet, 2f);
 
                 munición--; // Disminuir munición
+                textmunicion.text = munición.ToString();
                 currentCooldown = fireCooldown;
                 //animdisparo.SetBool("Disparo", false,)2f;
                 //animdisparo.SetBool("TerminaDisparo", false);

@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class PlayerDeath : MonoBehaviour
 {
     public ContadorJeringa contador;
+    public GameObject imagenPistola;
+    public GameObject textpistola;
     public void Start()
     {
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
@@ -20,6 +22,11 @@ public class PlayerDeath : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.gameObject.CompareTag("Pistola"))
+        {
+            imagenPistola.SetActive(true);
+            textpistola.SetActive(true);
+        }
         if (!contador.usando)
         {
             if (other.gameObject.CompareTag("Enemy"))
