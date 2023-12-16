@@ -18,6 +18,8 @@ public class PlayerWeapon : MonoBehaviour
     Transform ShootingRight;
     Transform ShootingLeft;
     [SerializeField] private int munición = 10; // Cantidad inicial de munición
+
+    //public Animator animdisparo;
     void Awake()
     {
         //la pistola empezará en false
@@ -85,13 +87,17 @@ public class PlayerWeapon : MonoBehaviour
             {
                 // Realizar el disparo
                 GameObject bullet = Instantiate(bulletPrefab);
+                //animdisparo.SetBool("Disparo", true);
                 bullet.GetComponent<Bullet>().ShootSound(SonidoBala);
                 bullet.transform.position = spawner.position;
                 bullet.transform.rotation = transform.rotation;
+               // animdisparo.SetBool("TerminaDisparo", true);
                 Destroy(bullet, 2f);
 
                 munición--; // Disminuir munición
                 currentCooldown = fireCooldown;
+                //animdisparo.SetBool("Disparo", false,)2f;
+                //animdisparo.SetBool("TerminaDisparo", false);
             }
             else
             {
