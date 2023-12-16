@@ -9,20 +9,12 @@ public class CasilleroMunicion : MonoBehaviour
     public bool dentro;
     public bool abierto;
     public float tiempo;
-    public Contador contador;
+    public PlayerWeapon contador;
     public bool tienemunicion;
-
+    public bool encontrado;
     void Start()
     {
-        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
-        if (jugador != null)
-        {
-            contador = jugador.GetComponent<Contador>();
-        }
-        else
-        {
-            Debug.LogError("No se encontró el objeto del jugador.");
-        }
+        
     }
     void Update()
     {
@@ -53,14 +45,22 @@ public class CasilleroMunicion : MonoBehaviour
             {
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    if (!tienemunicion)
-                    {
-                        contador.contador++;
-                        anim.SetBool("Lotiene", true);
-                        contador.UpdateBotiquinText();
-                        tienemunicion = true;
-                        letra.SetActive(false);
-                    }
+                    //buscar();
+                    
+                        if (!tienemunicion)
+                        {
+                            if (contador.munición < 10)
+                            {
+                                contador.munición = 10;
+                                anim.SetBool("Lotiene", true);
+                                contador.textmunicion.text = contador.munición.ToString();
+                                tienemunicion = true;
+                                letra.SetActive(false);
+                            }
+
+                        }
+                    
+                    
 
                 }
             }
@@ -70,6 +70,20 @@ public class CasilleroMunicion : MonoBehaviour
 
     }
 
+   /* void buscar()
+    {
+
+        contador = GameObject.Find("Player").GetComponent<PlayerWeapon>();
+        if(contador = contador.GetComponent<PlayerWeapon>())
+        {
+            encontrado = true;
+        }
+        else
+        {
+            Debug.LogError("No se encontró el objeto del jugador.");
+            encontrado = false;
+        }
+    }*/
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
