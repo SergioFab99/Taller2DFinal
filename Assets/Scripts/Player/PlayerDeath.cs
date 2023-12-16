@@ -8,6 +8,7 @@ public class PlayerDeath : MonoBehaviour
     public ContadorJeringa contador;
     public GameObject imagenPistola;
     public GameObject textpistola;
+    public bool tienepistola;
     public void Start()
     {
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
@@ -26,6 +27,7 @@ public class PlayerDeath : MonoBehaviour
         {
             imagenPistola.SetActive(true);
             textpistola.SetActive(true);
+            tienepistola = true;
         }
         if (!contador.usando)
         {

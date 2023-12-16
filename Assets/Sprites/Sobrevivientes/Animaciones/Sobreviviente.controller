@@ -507,6 +507,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Seguir
     m_EventTreshold: 0
+  - m_ConditionMode: 4
+    m_ConditionEvent: Direccion
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6347656923234675015}
   m_Solo: 0
@@ -694,19 +697,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Direccion
     m_Type: 3
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Sangre
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1309,10 +1312,10 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: -6347656923234675015}
-    m_Position: {x: -280, y: 60, z: 0}
+    m_Position: {x: -260, y: 40, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3683016177291380101}
-    m_Position: {x: 30, y: 330, z: 0}
+    m_Position: {x: 20, y: 290, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8576759332201113784}
     m_Position: {x: 270, y: 220, z: 0}
@@ -1327,7 +1330,7 @@ AnimatorStateMachine:
     m_Position: {x: -430, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2909644452780083854}
-    m_Position: {x: 20, y: 400, z: 0}
+    m_Position: {x: 10, y: 380, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7073401541000286975}
     m_Position: {x: -470, y: -30, z: 0}

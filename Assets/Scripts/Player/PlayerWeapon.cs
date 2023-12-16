@@ -18,7 +18,7 @@ public class PlayerWeapon : MonoBehaviour
     Jugador Jugador;
     Transform ShootingRight;
     Transform ShootingLeft;
-    [SerializeField] private int munición = 10; // Cantidad inicial de munición
+    [SerializeField] public int munición = 10; // Cantidad inicial de munición
     public TextMeshProUGUI textmunicion;
     //public Animator animdisparo;
 

@@ -12,18 +12,26 @@ public class Municion : MonoBehaviour
         {
             PlayerWeapon playerWeapon = other.gameObject.GetComponentInChildren<PlayerWeapon>();
             Metralleta metralleta = other.gameObject.GetComponentInChildren<Metralleta>();
-
-            if (playerWeapon != null)
+            PlayerDeath playerDeath = other.gameObject.GetComponentInChildren<PlayerDeath>();
+            if(playerWeapon.munición < 10)
             {
-                playerWeapon.AñadirMunición(municionAIncrementar);
+                if (playerDeath.tienepistola)
+                {
+                    if (playerWeapon != null)
+                    {
+                        playerWeapon.AñadirMunición(municionAIncrementar);
+                    }
+
+                    /*if (metralleta != null)
+                    {
+                        metralleta.AñadirMunición(municionAIncrementar);
+                    }*/
+
+                    Destroy(gameObject); // Destruye el objeto de munición después de ser recolectado
+                }
+
             }
 
-            if (metralleta != null)
-            {
-                metralleta.AñadirMunición(municionAIncrementar);
-            }
-
-            Destroy(gameObject); // Destruye el objeto de munición después de ser recolectado
         }
     }
 }

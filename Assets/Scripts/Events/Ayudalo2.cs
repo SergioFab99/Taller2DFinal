@@ -20,9 +20,15 @@ public class Ayudalo2 : MonoBehaviour
         if (jugador != null)
         {
             contador = jugador.GetComponent<Contador>();
-            mov = jugador.GetComponent<MovimientoAutomatico>();
+            
         }
+        GameObject Survivor = GameObject.FindGameObjectWithTag("Survivor");
+        if (Survivor != null)
+        {
+            mov = Survivor.GetComponent<MovimientoAutomatico>();
 
+        }
+        
         else
         {
             Debug.LogError("No se encontró el objeto del jugador.");
