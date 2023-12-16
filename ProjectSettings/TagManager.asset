@@ -16,6 +16,7 @@ TagManager:
   - Survivor
   - Botiquin
   - Jeringa
+  - Pistola
   layers:
   - Default
   - TransparentFX

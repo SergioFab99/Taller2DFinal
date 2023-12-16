@@ -359,6 +359,7 @@ MonoBehaviour:
   spawner: {fileID: 2668552583215711986}
   Pistola: {fileID: 2015369309622893155}
   SonidoBala: {fileID: 8300000, guid: 17ef1be8000a6d74292a37b285a28a59, type: 3}
+  "munici\xF3n": 30
 --- !u!1 &2990965005770252349
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +464,7 @@ MonoBehaviour:
   spawner: {fileID: 2118370830772147668}
   fireCooldown: 0.9
   SonidoBala: {fileID: 8300000, guid: 975e16687ed33ba46bee3af8be1f6453, type: 3}
+  "munici\xF3n": 10
 --- !u!82 &7946093669423257218
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1228,7 +1230,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pistola: {fileID: 2990965005770252349}
   metralleta: {fileID: 1991700673209842118}
-  bazooka: {fileID: 1986329120464562325}
   NivelDeArma: 1
 --- !u!114 &4649303776022263100
 MonoBehaviour:
@@ -1255,6 +1256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cedd5fa06ccf17245aef390cf59ccff5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  contador: {fileID: 0}
 --- !u!95 &1031976526440668621
 Animator:
   serializedVersion: 7

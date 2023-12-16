@@ -13,6 +13,10 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         animacion = GetComponent<Animator>();
     }
+    private void Start()
+    {
+        animacion.SetBool("izquierda", false);
+    }
     void Update()
     {
         MoverJugador();
@@ -40,6 +44,13 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             animacion.SetBool("arriba", false);
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if((collision.gameObject.CompareTag("Pistola")))
+        {
+            animacion.SetBool("TienePistola", true);
         }
     }
 }
