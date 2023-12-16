@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6729370478104769401}
   - component: {fileID: 5163221861151727536}
-  - component: {fileID: 283265987563488085}
   m_Layer: 0
   m_Name: PresionaE
   m_TagString: Untagged
@@ -80,22 +79,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.9322131, y: 1.0255089}
   m_EdgeRadius: 0
---- !u!114 &283265987563488085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22872469089476052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: face6ab7353d4b944b3e895aa9a91381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  letra: {fileID: 5323306539106434756}
-  anim: {fileID: 5404369022033917960}
-  dentro: 0
-  abierto: 0
 --- !u!1 &5323306539106434756
 GameObject:
   m_ObjectHideFlags: 0

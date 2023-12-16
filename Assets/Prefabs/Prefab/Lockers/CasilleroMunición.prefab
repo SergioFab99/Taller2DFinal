@@ -94,7 +94,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7675895267245724906}
   - component: {fileID: 1685291429715357469}
-  - component: {fileID: 864666608468345827}
   - component: {fileID: 8310893677102836212}
   m_Layer: 0
   m_Name: "CasilleroMunici\xF3n"
@@ -171,28 +170,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &864666608468345827
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4750431431683172529}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 915b998cb33f94e4da8ce0ae6499d420, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!68 &8310893677102836212
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -335,3 +312,6 @@ MonoBehaviour:
   anim: {fileID: 0}
   dentro: 0
   abierto: 0
+  tiempo: 0
+  contador: {fileID: 0}
+  tienebotiquin: 0
