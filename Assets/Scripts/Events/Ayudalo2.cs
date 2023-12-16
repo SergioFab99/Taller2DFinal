@@ -12,6 +12,7 @@ public class Ayudalo2 : MonoBehaviour
     public bool dentro;
     public bool misionaceptada;
     public Contador contador;
+    public MovimientoAutomatico mov;
     public bool misionterminada;
     void Start()
     {
@@ -19,7 +20,9 @@ public class Ayudalo2 : MonoBehaviour
         if (jugador != null)
         {
             contador = jugador.GetComponent<Contador>();
+            mov = jugador.GetComponent<MovimientoAutomatico>();
         }
+
         else
         {
             Debug.LogError("No se encontró el objeto del jugador.");
@@ -97,6 +100,7 @@ public class Ayudalo2 : MonoBehaviour
             contador.contador = 0;
             contador.UpdateBotiquinText();
             misionterminada = true;
+            mov.Sangrando = false;
             textMesh.text = "Completo.";
         }
         else
