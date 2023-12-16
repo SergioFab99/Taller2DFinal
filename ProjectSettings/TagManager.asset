@@ -17,6 +17,8 @@ TagManager:
   - Botiquin
   - Jeringa
   - Pistola
+  - col1
+  - col2
   layers:
   - Default
   - TransparentFX
