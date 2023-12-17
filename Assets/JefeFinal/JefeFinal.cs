@@ -53,7 +53,7 @@ public class JefeFinal : MonoBehaviour
         {
         Ataque[0].SetActive(true);
 
-        Ataque[0].GetComponent<BalaEnemigo>().speed = 5f * Dificultad;
+        Ataque[0].GetComponent<BalaEnemigo>().speed = 10f * Dificultad;
         Ataque[0].GetComponent<BalaEnemigo>().mover = true;
         AtacandoSinmoverse = true;
         if (Fase2)

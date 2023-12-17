@@ -10,6 +10,7 @@ public class PlayerDeath : MonoBehaviour
     public GameObject textpistola;
     public bool tienepistola;
     public GameObject pistolaFire;
+    public Animator animator;
     public void Start()
     {
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
@@ -27,9 +28,20 @@ public class PlayerDeath : MonoBehaviour
         if (other.gameObject.CompareTag("Pistola"))
         {
             imagenPistola.SetActive(true);
+            animator.SetBool("tienepistola", true);
             textpistola.SetActive(true);
             tienepistola = true;
             pistolaFire.SetActive(true);
+
+        }
+
+        if (other.gameObject.CompareTag("akm"))
+        {
+            animator.SetBool("tieneotrarma", true);
+            animator.SetBool("tienepistola", false);
+            //textpistola.SetActive(true);
+            //tienepistola = true;
+            //pistolaFire.SetActive(true);
 
         }
         if (!contador.usando)
