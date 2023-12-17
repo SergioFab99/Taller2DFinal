@@ -19,6 +19,7 @@ TagManager:
   - Pistola
   - col1
   - col2
+  - akm
   layers:
   - Default
   - TransparentFX

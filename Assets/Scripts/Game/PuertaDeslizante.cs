@@ -4,19 +4,20 @@ using System.Collections.Generic;
 
 public class PuertaDeslizante : MonoBehaviour
 {
-    public float slideDistance = 3.0f;  // Distancia que se deslizará la puerta
-    public float slideSpeed = 1.0f;     // Velocidad de deslizamiento
-    public float detectionRadius = 3.0f; // Radio de detección
-    public float closeDelay = 2.0f;      // Retraso antes de cerrar la puerta
-    private Vector3 closedPosition;      // Posición original (cerrada) de la puerta
-    private Vector3 openPosition;        // Posición abierta de la puerta
-    private bool isOpen = false;         // Controla si la puerta está abierta o cerrada
-    private Coroutine closeCoroutine;    // Referencia a la corrutina de cierre
+    public float slideDistance = 3.0f;
+    public float slideSpeed = 1.0f;
+    public float detectionRadius = 3.0f;
+    public float closeDelay = 2.0f;
+    public GameObject targetObject;  // Agrega un campo para el GameObject objetivo
+    private Vector3 closedPosition;
+    private Vector3 openPosition;
+    private bool isOpen = false;
+    private Coroutine closeCoroutine;
 
     void Start()
     {
-        closedPosition = transform.position;  // Guarda la posición inicial de la puerta
-        openPosition = closedPosition - transform.right * slideDistance; // Calcula la posición abierta
+        closedPosition = transform.position;
+        openPosition = closedPosition - transform.right * slideDistance;
     }
 
     void Update()
@@ -32,7 +33,7 @@ public class PuertaDeslizante : MonoBehaviour
                     StopCoroutine(closeCoroutine);
                     closeCoroutine = null;
                 }
-                StartCoroutine(SlideDoor(openPosition));
+                StartCoroutine(SlideDoor(openPosition, targetObject));  // Pasa el GameObject objetivo
             }
             else if (distanceToPlayer > detectionRadius && isOpen && closeCoroutine == null)
             {
@@ -41,30 +42,29 @@ public class PuertaDeslizante : MonoBehaviour
         }
     }
 
-    IEnumerator SlideDoor(Vector3 targetPosition)
+    IEnumerator SlideDoor(Vector3 targetPosition, GameObject target)
     {
         isOpen = targetPosition != closedPosition;
         float timeElapsed = 0;
 
         while (timeElapsed < 1.0f)
         {
-            transform.position = Vector3.Lerp(transform.position, targetPosition, timeElapsed);
+            target.transform.position = Vector3.Lerp(target.transform.position, targetPosition, timeElapsed);
             timeElapsed += Time.deltaTime * slideSpeed;
             yield return null;
         }
 
-        transform.position = targetPosition;
+        target.transform.position = targetPosition;
     }
 
     IEnumerator CloseDoorAfterDelay()
     {
         yield return new WaitForSeconds(closeDelay);
 
-        // Verifica si el jugador ha vuelto al radio de detección antes de cerrar la puerta
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player == null || Vector3.Distance(player.transform.position, transform.position) > detectionRadius)
         {
-            StartCoroutine(SlideDoor(closedPosition));
+            StartCoroutine(SlideDoor(closedPosition, targetObject));
         }
         closeCoroutine = null;
     }
