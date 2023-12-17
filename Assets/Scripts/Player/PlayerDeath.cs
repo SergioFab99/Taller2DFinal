@@ -11,6 +11,9 @@ public class PlayerDeath : MonoBehaviour
     public bool tienepistola;
     public GameObject pistolaFire;
     public Animator animator;
+
+    public bool tieneMetralleta;
+    public GameObject textmetralleta;
     public void Start()
     {
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
@@ -39,6 +42,8 @@ public class PlayerDeath : MonoBehaviour
         {
             animator.SetBool("tieneotrarma", true);
             animator.SetBool("tienepistola", false);
+            tieneMetralleta = true;
+            textmetralleta.SetActive(true);
             //textpistola.SetActive(true);
             //tienepistola = true;
             //pistolaFire.SetActive(true);
