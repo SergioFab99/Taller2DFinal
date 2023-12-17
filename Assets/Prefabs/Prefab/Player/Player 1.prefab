@@ -572,7 +572,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 5
   m_Sprite: {fileID: 8539361002539728163, guid: 26283458b571e3946acd483671cf8e0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -672,6 +672,7 @@ MonoBehaviour:
   pistola: {fileID: 9167395445751523641}
   metralleta: {fileID: 315820755001061529}
   NivelDeArma: 1
+  anim: {fileID: 0}
 --- !u!114 &2951345673913571015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -703,6 +704,7 @@ MonoBehaviour:
   textpistola: {fileID: 0}
   tienepistola: 0
   pistolaFire: {fileID: 9167395445751523641}
+  animator: {fileID: 0}
 --- !u!95 &3845984350680592673
 Animator:
   serializedVersion: 7

@@ -1,8 +1,6 @@
 using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
-using UnityEngine.Rendering;
-using UnityEngine.UIElements;
 
 public class Metralleta : MonoBehaviour
 {
@@ -12,16 +10,19 @@ public class Metralleta : MonoBehaviour
     private float tiempoUltimoDisparo;
     public new Camera camera;
     public Transform spawner;
-    public Transform Pistola;
     private GameObject Player;
     [SerializeField] private AudioClip SonidoBala;
     Transform ShootingRight;
     Transform ShootingLeft;
 
+    public TextMeshProUGUI txtcontador;
+
+
+
     // Escala original de la metralleta
     private Vector3 escalaOriginal;
 
-    [SerializeField] private int munición = 30; // Cantidad inicial de munición
+    [SerializeField] public int munición = 30; // Cantidad inicial de munición
 
     void Start()
     {
@@ -29,7 +30,10 @@ public class Metralleta : MonoBehaviour
         Player = GameObject.Find("Player");
         escalaOriginal = transform.localScale;
         ShootingLeft = GameObject.Find("ShootingLeft").GetComponent<Transform>();
-        ShootingRight = GameObject.Find("ShootingRight").GetComponent<Transform>();
+        ShootingRight = GameObject.Find("ShootingRight").GetComponent <Transform>();
+
+        // Actualizar el TextMeshProUGUI al inicio para mostrar la munición inicial
+        ActualizarTextoMunicion();
     }
 
     void Update()
@@ -47,6 +51,12 @@ public class Metralleta : MonoBehaviour
             {
                 Debug.Log("Munición insuficiente para una ráfaga");
             }
+        }
+
+        if(munición >= 30)
+        {
+            munición = 30;
+            txtcontador.text = munición.ToString();
         }
     }
 
@@ -97,11 +107,14 @@ public class Metralleta : MonoBehaviour
             }
         }
     }
+
     public void AñadirMunición(int cantidad)
     {
         Debug.Log("Añadiendo munición");
         munición += cantidad;
-        // Igual que en PlayerWeapon, aquí puedes gestionar límites o condiciones especiales.
+
+        // Actualizar el TextMeshProUGUI después de añadir munición
+        ActualizarTextoMunicion();
     }
 
     void Disparar()
@@ -113,5 +126,14 @@ public class Metralleta : MonoBehaviour
         Destroy(bullet, 2f);
 
         munición--; // Disminuir munición
+
+        // Actualizar el TextMeshProUGUI después de disparar
+        ActualizarTextoMunicion();
+    }
+
+    // Método para actualizar el TextMeshProUGUI
+    void ActualizarTextoMunicion()
+    {
+        txtcontador.text = munición.ToString();
     }
 }

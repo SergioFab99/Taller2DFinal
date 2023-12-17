@@ -11,7 +11,7 @@ public class Municion : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             PlayerWeapon playerWeapon = other.gameObject.GetComponentInChildren<PlayerWeapon>();
-            Metralleta metralleta = other.gameObject.GetComponentInChildren<Metralleta>();
+           // Metralleta metralleta = other.gameObject.GetComponentInChildren<Metralleta>();
             PlayerDeath playerDeath = other.gameObject.GetComponentInChildren<PlayerDeath>();
             if(playerWeapon.munición < 10)
             {
