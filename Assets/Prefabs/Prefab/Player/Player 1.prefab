@@ -198,8 +198,7 @@ Transform:
   m_LocalPosition: {x: 0.1304, y: -0.0708, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5822409221666354950}
+  m_Children: []
   m_Father: {fileID: 5056217059432030517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7082342483483012698
@@ -261,7 +260,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3159642828830527965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bc7310329b027f43969caa354600bad, type: 3}
   m_Name: 
@@ -272,6 +271,10 @@ MonoBehaviour:
   fireCooldown: 0.9
   SonidoBala: {fileID: 8300000, guid: 975e16687ed33ba46bee3af8be1f6453, type: 3}
   "munici\xF3n": 10
+  textmunicion: {fileID: 0}
+  animdisparo: {fileID: 0}
+  tiempo: 0
+  yadisparo: 0
 --- !u!82 &2564264211807054304
 AudioSource:
   m_ObjectHideFlags: 0
@@ -526,6 +529,7 @@ Transform:
   - {fileID: 3485907190310494667}
   - {fileID: 2808248365843757999}
   - {fileID: 5453407263514280602}
+  - {fileID: 5822409221666354950}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3586873486223633879
@@ -681,6 +685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocidadMovimiento: 10
+  animacion: {fileID: 0}
 --- !u!114 &1030688467172089494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,6 +699,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   contador: {fileID: 0}
+  imagenPistola: {fileID: 0}
+  textpistola: {fileID: 0}
+  tienepistola: 0
 --- !u!95 &3845984350680592673
 Animator:
   serializedVersion: 7
@@ -757,6 +765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5822409221666354950}
+  - component: {fileID: 282734377882531481}
   m_Layer: 6
   m_Name: FirePoint
   m_TagString: Untagged
@@ -773,9 +782,31 @@ Transform:
   m_GameObject: {fileID: 9167395445751523641}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.67, y: 0.85, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.19720002, y: -0.036800005, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 5123748069799765240}
+  m_Father: {fileID: 5056217059432030517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &282734377882531481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9167395445751523641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc7310329b027f43969caa354600bad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  bulletPrefab: {fileID: 3647859578678792709, guid: 4f135e66371c96a43b89ef5fe356efe3, type: 3}
+  spawner: {fileID: 5822409221666354950}
+  fireCooldown: 0.9
+  SonidoBala: {fileID: 8300000, guid: 975e16687ed33ba46bee3af8be1f6453, type: 3}
+  "munici\xF3n": 10
+  textmunicion: {fileID: 0}
+  animdisparo: {fileID: 0}
+  tiempo: 0
+  yadisparo: 0

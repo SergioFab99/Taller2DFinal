@@ -20,13 +20,18 @@ public class PlayerWeapon : MonoBehaviour
     Transform ShootingLeft;
     [SerializeField] public int munición = 10; // Cantidad inicial de munición
     public TextMeshProUGUI textmunicion;
-    //public Animator animdisparo;
+    public Animator animdisparo;
+    public float tiempo;
+    public bool yadisparo;
+
+    Vector2 direccion;
 
     
     void Awake()
     {
         //la pistola empezará en false
         gameObject.SetActive(false);
+        direccion = Vector2.down;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -46,19 +51,39 @@ public class PlayerWeapon : MonoBehaviour
 
     void Update()
     {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+        if(horizontal !=0  || vertical !=0)
+        {
+            direccion = new Vector2(horizontal, vertical);  
+        }
         RotateTowardsMouse();
         CheckFiring();
+
+        if (yadisparo)
+        {
+            tiempo += Time.deltaTime;
+
+            if (tiempo > 0.6f) // Cambiado a 0.6f
+            {
+                animdisparo.SetBool("Disparo", false);
+                yadisparo = false; // Importante restablecer la bandera aquí si es necesario
+                tiempo = 0;
+            }
+        }
+        
     }
 
     private void RotateTowardsMouse()
     {
+        return;
         Vector3 mouseWorldPosition = camera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseDirection = mouseWorldPosition - Player.transform.position;
         mouseDirection.z = 0;
         transform.right = mouseDirection;
-        float angle = GetAngleTowardsMouse();
+        //float angle = GetAngleTowardsMouse();
         Vector3 scale = transform.localScale;
-        if (mouseDirection.x < 0)
+        /*if (mouseDirection.x < 0)
         {
             transform.position = ShootingLeft.transform.position;
             scale.y = -0.04f;
@@ -69,22 +94,42 @@ public class PlayerWeapon : MonoBehaviour
             transform.position = ShootingRight.transform.position;
             scale.y = 0.04f;
             transform.localScale = scale;
-        }
+        }*/
     }
 
-    private float GetAngleTowardsMouse()
+   /* private float GetAngleTowardsMouse()
     {
         Vector3 mouseWorldPosition = camera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseDirection = mouseWorldPosition - transform.position;
         mouseDirection.z = 0;
         float angle = (Vector3.SignedAngle(Vector3.right, mouseDirection, Vector3.forward) + 360) % 360;
         return angle;
-    }
+    }*/
     public void AñadirMunición(int cantidad)
     {
         Debug.Log("Añadiendo munición");
         munición += cantidad;
         textmunicion.text = "10";
+    }
+    private void RealizarDisparo()
+    {
+        GameObject bullet = Instantiate(bulletPrefab);
+        animdisparo.SetBool("Disparo", true);
+        bullet.GetComponent<Bullet>().ShootSound(SonidoBala);
+        bullet.transform.position = spawner.position;
+        bullet.transform.right = direccion;
+        // animdisparo.SetBool("TerminaDisparo", true);
+        Destroy(bullet, 1f);
+        munición--; // Disminuir munición
+        textmunicion.text = munición.ToString();
+        
+        yadisparo = true;
+        Invoke("DesactivarAnimacionDisparo", 0.3f);
+    }
+
+    private void DesactivarAnimacionDisparo()
+    {
+        animdisparo.SetBool("Disparo", false);
     }
 
     private void CheckFiring()
@@ -96,19 +141,12 @@ public class PlayerWeapon : MonoBehaviour
             if (munición > 0) // Verificar si hay munición
             {
                 // Realizar el disparo
-                GameObject bullet = Instantiate(bulletPrefab);
-                //animdisparo.SetBool("Disparo", true);
-                bullet.GetComponent<Bullet>().ShootSound(SonidoBala);
-                bullet.transform.position = spawner.position;
-                bullet.transform.rotation = transform.rotation;
-               // animdisparo.SetBool("TerminaDisparo", true);
-                Destroy(bullet, 2f);
-
-                munición--; // Disminuir munición
-                textmunicion.text = munición.ToString();
+                //GameObject bullet = Instantiate(bulletPrefab);
+                Invoke("RealizarDisparo", 0.5f);
+                animdisparo.SetBool("Disparo", true);
                 currentCooldown = fireCooldown;
-                //animdisparo.SetBool("Disparo", false,)2f;
-                //animdisparo.SetBool("TerminaDisparo", false);
+                //animdisparo.SetBool("Disparo", false);
+
             }
             else
             {

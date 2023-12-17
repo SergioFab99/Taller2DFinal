@@ -9,6 +9,7 @@ public class PlayerDeath : MonoBehaviour
     public GameObject imagenPistola;
     public GameObject textpistola;
     public bool tienepistola;
+    public GameObject pistolaFire;
     public void Start()
     {
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
@@ -28,6 +29,8 @@ public class PlayerDeath : MonoBehaviour
             imagenPistola.SetActive(true);
             textpistola.SetActive(true);
             tienepistola = true;
+            pistolaFire.SetActive(true);
+
         }
         if (!contador.usando)
         {

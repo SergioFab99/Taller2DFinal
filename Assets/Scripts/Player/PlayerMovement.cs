@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float velocidadMovimiento = 5.0f;
+    [SerializeField] public float velocidadMovimiento = 5.0f;
     private Rigidbody2D rb2d;
-    Animator animacion;
+    public Animator animacion;
 
     private void Awake()
     {
