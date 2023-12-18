@@ -30,8 +30,7 @@ Transform:
   m_LocalPosition: {x: 0.0088, y: -0.0622, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 551648878767417529}
+  m_Children: []
   m_Father: {fileID: 5056217059432030517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4257938189638197178
@@ -102,8 +101,11 @@ MonoBehaviour:
   velocidadDisparo: 50
   camera: {fileID: 0}
   spawner: {fileID: 551648878767417529}
-  Pistola: {fileID: 5123748069799765240}
   SonidoBala: {fileID: 8300000, guid: 17ef1be8000a6d74292a37b285a28a59, type: 3}
+  txtcontador: {fileID: 0}
+  animdisparo: {fileID: 0}
+  tiempo: 0
+  yadisparo: 0
   "munici\xF3n": 30
 --- !u!1 &350709798349269817
 GameObject:
@@ -395,12 +397,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6597693714497284670}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.98, y: 0.75, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.16800003, y: -0.03219986, z: 0}
+  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1201705135526059232}
+  m_Father: {fileID: 5056217059432030517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7260764284015036327
 GameObject:
@@ -530,6 +532,7 @@ Transform:
   - {fileID: 2808248365843757999}
   - {fileID: 5453407263514280602}
   - {fileID: 5822409221666354950}
+  - {fileID: 551648878767417529}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3586873486223633879
@@ -672,7 +675,13 @@ MonoBehaviour:
   pistola: {fileID: 9167395445751523641}
   metralleta: {fileID: 315820755001061529}
   NivelDeArma: 1
+  textpistola: {fileID: 0}
+  textmetralleta: {fileID: 0}
+  PlayerDeath: {fileID: 0}
   anim: {fileID: 0}
+  animPlayer: {fileID: 0}
+  activarevolver: 0
+  activarpistola: 0
 --- !u!114 &2951345673913571015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -687,6 +696,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadMovimiento: 10
   animacion: {fileID: 3845984350680592673}
+  control: {fileID: 0}
 --- !u!114 &1030688467172089494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -705,6 +715,8 @@ MonoBehaviour:
   tienepistola: 0
   pistolaFire: {fileID: 9167395445751523641}
   animator: {fileID: 0}
+  tieneMetralleta: 0
+  textmetralleta: {fileID: 0}
 --- !u!95 &3845984350680592673
 Animator:
   serializedVersion: 7

@@ -17,7 +17,11 @@ public class Metralleta : MonoBehaviour
 
     public TextMeshProUGUI txtcontador;
 
+    public Animator animdisparo;
+    public float tiempo;
+    public bool yadisparo;
 
+    Vector2 direccion;
 
     // Escala original de la metralleta
     private Vector3 escalaOriginal;
@@ -38,7 +42,15 @@ public class Metralleta : MonoBehaviour
 
     void Update()
     {
+        float horizontal = Input.GetAxisRaw("Horizontal");
+        float vertical = Input.GetAxisRaw("Vertical");
+
+        if (horizontal != 0 || vertical != 0)
+        {
+            direccion = new Vector2(horizontal, vertical);
+        }
         RotateTowardsMouse();
+
 
         if (Input.GetMouseButtonDown(0) && Time.time > tiempoUltimoDisparo + cooldown)
         {
@@ -52,8 +64,19 @@ public class Metralleta : MonoBehaviour
                 Debug.Log("Munición insuficiente para una ráfaga");
             }
         }
+        if (yadisparo)
+        {
+            tiempo += Time.deltaTime;
 
-        if(munición >= 30)
+            if (tiempo > 0.6f) // Cambiado a 0.6f
+            {
+                animdisparo.SetBool("Disparo", false);
+                yadisparo = false; // Importante restablecer la bandera aquí si es necesario
+                tiempo = 0;
+            }
+        }
+
+        if (munición >= 30)
         {
             munición = 30;
             txtcontador.text = munición.ToString();
@@ -62,13 +85,14 @@ public class Metralleta : MonoBehaviour
 
     private void RotateTowardsMouse()
     {
+        return;
         Vector3 mouseWorldPosition = camera.ScreenToWorldPoint(Input.mousePosition);
         Vector3 mouseDirection = mouseWorldPosition - Player.transform.position;
         mouseDirection.z = 0;
         transform.right = mouseDirection;
-        float angle = GetAngleTowardsMouse();
+        //float angle = GetAngleTowardsMouse();
         Vector3 scale = transform.localScale;
-        if (mouseDirection.x < 0)
+        /*if (mouseDirection.x < 0)
         {
             transform.position = ShootingLeft.transform.position;
             scale.y = -0.04f;
@@ -88,7 +112,7 @@ public class Metralleta : MonoBehaviour
         Vector3 mouseDirection = mouseWorldPosition - transform.position;
         mouseDirection.z = 0;
         float angle = (Vector3.SignedAngle(Vector3.right, mouseDirection, Vector3.forward) + 360) % 360;
-        return angle;
+        return angle;*/
     }
 
     IEnumerator Rafaga()
@@ -120,17 +144,23 @@ public class Metralleta : MonoBehaviour
     void Disparar()
     {
         GameObject bullet = Instantiate(bulletPrefab);
+        animdisparo.SetBool("Disparo", true);
         bullet.GetComponent<Bullet>().ShootSound(SonidoBala);
         bullet.transform.position = spawner.position;
-        bullet.transform.rotation = transform.rotation;
+        bullet.transform.right = direccion;
         Destroy(bullet, 2f);
 
         munición--; // Disminuir munición
 
         // Actualizar el TextMeshProUGUI después de disparar
         ActualizarTextoMunicion();
+        yadisparo = true;
+        Invoke("DesactivarAnimacionDisparo", 0.3f);
     }
-
+    private void DesactivarAnimacionDisparo()
+    {
+        animdisparo.SetBool("Disparo", false);
+    }
     // Método para actualizar el TextMeshProUGUI
     void ActualizarTextoMunicion()
     {
