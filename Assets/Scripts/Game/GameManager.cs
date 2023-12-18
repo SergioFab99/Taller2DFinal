@@ -25,8 +25,8 @@ public class GameManager : MonoBehaviour
     public void RecolectarLlave()
     {
         numLlaves++;
-        Debug.Log("Has recolectado una llave! Ahora tienes " + numLlaves + " llaves.");
-        contadorllaves.text = "Ahora tienes " + numLlaves + " llaves";
+        Debug.Log("Encuentra las llaves ( " + numLlaves + "/3)");
+        contadorllaves.text = "Encuentra las llaves ( " + numLlaves + "/3)";
 
         if (numLlaves == 3)
         {
