@@ -31,8 +31,8 @@ public class JefeFinal : MonoBehaviour
     bool Fase2;
 
     [Header("Scenes")]
-    string Victoria1;
-    string Victoria2;
+   public  string Victoria1;
+    public string Victoria2;
 
     //traerlasmisiones
     misionescumplidas misiones;
@@ -199,17 +199,26 @@ public class JefeFinal : MonoBehaviour
             Ataque[2].SetActive(false);
             Ataque[0].SetActive(false);
             Ataque[3].SetActive(false);
-            Ataque[4].SetActive(false);
+         
 
-            if(misiones.mision1completadaconexito && misiones.mision2completadaconexito)
+            Debug.Log("Cargando escena de victoria");
+            if (misiones.mision1completadaconexito && misiones.mision2completadaconexito)
             {
                 SceneManager.LoadScene(Victoria1);
+            }
+            else if (misiones.mision2completadaconexito)
+            {
+                SceneManager.LoadScene(Victoria2);
+            }
+            else if (misiones.mision1completadaconexito)
+            {
+                SceneManager.LoadScene(Victoria2);
             }
             else
             {
                 SceneManager.LoadScene(Victoria2);
             }
-           
+
         }
     }
     void OnTriggerEnter2D(Collider2D collision)

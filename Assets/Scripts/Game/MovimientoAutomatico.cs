@@ -262,7 +262,7 @@ public class MovimientoAutomatico : MonoBehaviour
         }
         else
         {
-            anim.SetBool("Muerta", true);
+            
         }
         
         
@@ -276,6 +276,11 @@ public class MovimientoAutomatico : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Siguiendo = true;
+        }
+        if (collision.CompareTag("Bala"))
+        {
+            anim.SetTrigger("MuertaTrigger");
+            muerta = true;
         }
 
     }

@@ -25,6 +25,7 @@ TagManager:
   - CanvasEventos
   - TP
   - TPDestino
+  - ActivarTXT2
   layers:
   - Default
   - TransparentFX

@@ -933,11 +933,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 759dec6998bc61348bd22c553242eb78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slideDistance: 3
-  slideSpeed: 1
-  detectionRadius: 6
-  closeDelay: 2
-  targetObject: {fileID: 0}
 --- !u!212 &280614704
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2584,7 +2579,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1522217069}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &520906774
+--- !u!43 &535976857
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2894,6 +2889,14 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 2100000, guid: ddc22d75d667a1b4babe8c00bd2ee046, type: 2}
+    - target: {fileID: 5869763918962182648, guid: b2f5513b391fdec4b8330fff8928a11a, type: 3}
+      propertyPath: Victoria1
+      value: Victoria1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5869763918962182648, guid: b2f5513b391fdec4b8330fff8928a11a, type: 3}
+      propertyPath: Victoria2
+      value: Victoria2
+      objectReference: {fileID: 0}
     - target: {fileID: 5869763918962182648, guid: b2f5513b391fdec4b8330fff8928a11a, type: 3}
       propertyPath: ZombiePrefab
       value: 
@@ -3587,11 +3590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 759dec6998bc61348bd22c553242eb78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slideDistance: 3
-  slideSpeed: 1
-  detectionRadius: 6
-  closeDelay: 2
-  targetObject: {fileID: 0}
 --- !u!212 &957748248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35352,13 +35350,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1163286926}
+  - component: {fileID: 1163286927}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: TPDestino
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1163286926
 Transform:
   m_ObjectHideFlags: 0
@@ -35374,6 +35373,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1163286927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163286925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f8a8e7c0778b82488fb00ecce135f9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameobject: {fileID: 0}
 --- !u!1 &1174153701
 GameObject:
   m_ObjectHideFlags: 0
@@ -44134,7 +44146,7 @@ MonoBehaviour:
     rid: -2
   m_ShadowCastingSource: 1
   m_ShadowMesh:
-    m_Mesh: {fileID: 520906774}
+    m_Mesh: {fileID: 535976857}
     m_LocalBounds:
       m_Center: {x: 0, y: -7, z: 0}
       m_Extent: {x: 50, y: 35, z: 0}
@@ -45050,8 +45062,8 @@ Transform:
   m_GameObject: {fileID: 1698467628}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -73.5, y: -3.8, z: -0.02384999}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -72.285, y: -2.5892, z: -0.02384999}
+  m_LocalScale: {x: 1.0619, y: 1.0619, z: 1.0619}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -45070,6 +45082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tagDestino: TPDestino
   destino: {fileID: 1163286926}
+  segunda: 0
 --- !u!61 &1698467631
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45104,7 +45117,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -19.632866, y: -19.569118}
+  m_Offset: {x: -63.63063, y: 14.405884}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -45114,7 +45127,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 72.39223, y: 64.61556}
+  m_Size: {x: 160.38779, y: 132.56555}
   m_EdgeRadius: 0
 --- !u!1 &1717398001
 GameObject:

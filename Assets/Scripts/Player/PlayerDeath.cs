@@ -14,6 +14,8 @@ public class PlayerDeath : MonoBehaviour
 
     public bool tieneMetralleta;
     public GameObject textmetralleta;
+
+    tp tp;
     public void Start()
     {
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
@@ -53,8 +55,16 @@ public class PlayerDeath : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Enemy"))
             {
-                SceneManager.LoadScene("Derrota");
+                if(tp.segunda)
+                {
+                    SceneManager.LoadScene("Derrota 1");
+                }
+                else
+                {
+                    SceneManager.LoadScene("Derrota");
+                }
             }
+           
         }
         else
         {

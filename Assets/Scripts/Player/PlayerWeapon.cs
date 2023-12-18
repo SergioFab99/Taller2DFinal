@@ -109,7 +109,13 @@ public class PlayerWeapon : MonoBehaviour
     {
         Debug.Log("Añadiendo munición");
         munición += cantidad;
-        textmunicion.text = "5";
+        if (munición>5)
+        {
+            munición = 5;
+        }
+        textmunicion.text = munición.ToString();
+        
+        Debug.Log(munición);
     }
     private void RealizarDisparo()
     {

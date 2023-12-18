@@ -7,11 +7,14 @@ public class tp : MonoBehaviour
     public string tagDestino = "TPDestino";
     public Transform destino;
 
+    public bool segunda;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             TeleportarJugador(other.transform);
+            segunda = true;
         }
     }
 

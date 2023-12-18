@@ -63,7 +63,7 @@ public class ControladorTexto : MonoBehaviour
         yield return new WaitForSeconds(5f);
         animar.SetBool("Animarlo", false);
         TextoFuncion(" ");
-        TextMision.text = ("Encuentra las llaves (0/3");
+        TextMision.text = ("Encuentra las llaves (0/3)");
         textayuda.text = ("Aprieta la letra C para ver tus nuevas misiones.");
         sonido.Stop();
     }

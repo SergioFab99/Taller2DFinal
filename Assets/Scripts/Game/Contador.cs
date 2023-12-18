@@ -36,5 +36,10 @@ public class Contador : MonoBehaviour
         {
             puedeRecoger = false;
         }
+        else
+        {
+            puedeRecoger= true;
+        }
+        
     }
 }

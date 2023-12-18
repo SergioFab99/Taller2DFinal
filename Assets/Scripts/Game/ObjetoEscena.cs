@@ -38,6 +38,7 @@ public class ObjetoEscena : MonoBehaviour
                         DontDestroyOnLoad(GameObject.FindGameObjectWithTag("HUD"));
                         DontDestroyOnLoad(GameObject.FindGameObjectWithTag("CanvasEventos"));
                         DontDestroyOnLoad(GameObject.FindGameObjectWithTag("Pausa"));
+                       
                         player.transform.position = new Vector3(-22, 14, 0); // ajusta x, y, z según sea necesario
                     }
 

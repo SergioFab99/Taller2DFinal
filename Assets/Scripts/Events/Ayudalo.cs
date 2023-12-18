@@ -124,6 +124,7 @@ public class Ayudalo : MonoBehaviour
             {
                 StartCoroutine(ActivarDesactivarRecordatorio("Completaste una misión."));
                 yavista = true;
+
             }
         }
         else
