@@ -23,6 +23,8 @@ TagManager:
   - HUD
   - Pausa
   - CanvasEventos
+  - TP
+  - TPDestino
   layers:
   - Default
   - TransparentFX

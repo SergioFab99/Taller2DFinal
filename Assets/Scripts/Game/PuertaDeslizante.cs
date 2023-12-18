@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class PuertaDeslizante : MonoBehaviour
 {
-    public float slideDistance = 3.0f;
+    /*public float slideDistance = 3.0f;
     public float slideSpeed = 1.0f;
     public float detectionRadius = 3.0f;
     public float closeDelay = 2.0f;
@@ -73,5 +73,5 @@ public class PuertaDeslizante : MonoBehaviour
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
-    }
+    }*/
 }

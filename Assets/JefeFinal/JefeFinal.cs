@@ -31,15 +31,30 @@ public class JefeFinal : MonoBehaviour
     bool Fase2;
 
     [Header("Scenes")]
-    string Victoria;
+    string Victoria1;
+    string Victoria2;
+
+    //traerlasmisiones
+    misionescumplidas misiones;
     void Start()
     {
         anim = GetComponent<Animator>();
         timer = 2.5f;
         Invocado = true;
+
+        GameObject jugador = GameObject.FindGameObjectWithTag("Player");
+        if (jugador != null)
+        {
+            misiones = jugador.GetComponent<misionescumplidas>();
+        }
+        else
+        {
+            Debug.LogError("No se encontró el objeto del jugador.");
+        }
     }
 
 
+    
     void Update()
     {
         Movimiento();
@@ -185,7 +200,16 @@ public class JefeFinal : MonoBehaviour
             Ataque[0].SetActive(false);
             Ataque[3].SetActive(false);
             Ataque[4].SetActive(false);
-            SceneManager.LoadScene(Victoria);
+
+            if(misiones.mision1completadaconexito && misiones.mision2completadaconexito)
+            {
+                SceneManager.LoadScene(Victoria1);
+            }
+            else
+            {
+                SceneManager.LoadScene(Victoria2);
+            }
+           
         }
     }
     void OnTriggerEnter2D(Collider2D collision)
