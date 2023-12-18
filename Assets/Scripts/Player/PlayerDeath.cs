@@ -55,14 +55,8 @@ public class PlayerDeath : MonoBehaviour
         {
             if (other.gameObject.CompareTag("Enemy"))
             {
-                if(tp.segunda)
-                {
-                    SceneManager.LoadScene("Derrota 1");
-                }
-                else
-                {
                     SceneManager.LoadScene("Derrota");
-                }
+               
             }
            
         }

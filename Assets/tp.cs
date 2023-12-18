@@ -13,8 +13,8 @@ public class tp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            TeleportarJugador(other.transform);
             segunda = true;
+            TeleportarJugador(other.transform);
         }
     }
 
