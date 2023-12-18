@@ -13,12 +13,21 @@ public class ControlArmas : MonoBehaviour
 
     public PlayerDeath PlayerDeath;
     public Animator anim;
+    public Animator animPlayer;
+    public bool activarevolver;
+    public bool activarpistola;
     void Start()
     {
         // Al inicio, activa solo la pistola
-        CambiarArma(0);
-
         PlayerDeath playerDeath = gameObject.GetComponentInChildren<PlayerDeath>();
+       
+        
+            CambiarArma(0);
+            activarevolver = true;
+        
+      
+
+        
     }
 
     void Update()
@@ -51,6 +60,10 @@ public class ControlArmas : MonoBehaviour
                 anim.SetBool("pistola", false);
                 textpistola.SetActive(true);
                 textmetralleta.SetActive(false);
+                activarevolver = true;
+                activarpistola = false;
+                animPlayer.SetBool("TienePistola",true);
+                animPlayer.SetBool("TieneMetralleta", false);
             }
             else
             {
@@ -58,7 +71,10 @@ public class ControlArmas : MonoBehaviour
                 anim.SetBool("sheriff", false);
                 textpistola.SetActive(false);
                 textmetralleta.SetActive(true);
-
+                activarevolver = false;
+                activarpistola = true;
+                animPlayer.SetBool("TieneMetralleta", true);
+                animPlayer.SetBool("TienePistola", false);
             }
         }
        

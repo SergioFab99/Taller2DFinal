@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     public Animator animacion;
 
+    public ControlArmas control;
+
     private void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -15,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Start()
     {
+        control = GetComponent<ControlArmas>(); 
         animacion.SetBool("izquierda", false);
     }
     void Update()
@@ -48,9 +51,20 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if((collision.gameObject.CompareTag("Pistola")))
+        if(control.activarevolver)
         {
-            animacion.SetBool("TienePistola", true);
+            if ((collision.gameObject.CompareTag("Pistola")))
+            {
+                animacion.SetBool("TienePistola", true);
+            }
         }
+
+        if ((collision.gameObject.CompareTag("akm")))
+        {
+            animacion.SetBool("TieneMetralleta", true);
+            
+            
+        }
+       
     }
 }
