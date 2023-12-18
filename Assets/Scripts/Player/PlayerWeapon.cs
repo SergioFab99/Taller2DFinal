@@ -18,7 +18,7 @@ public class PlayerWeapon : MonoBehaviour
     Jugador Jugador;
     Transform ShootingRight;
     Transform ShootingLeft;
-    [SerializeField] public int munición = 10; // Cantidad inicial de munición
+    [SerializeField] public int munición = 3; // Cantidad inicial de munición
     public TextMeshProUGUI textmunicion;
     public Animator animdisparo;
     public float tiempo;
@@ -46,7 +46,7 @@ public class PlayerWeapon : MonoBehaviour
         ShootingLeft = GameObject.Find("ShootingLeft").GetComponent<Transform>();
         ShootingRight = GameObject.Find("ShootingRight").GetComponent<Transform>();
 
-        textmunicion.text = "10";
+        textmunicion.text = "3";
     }
 
     void Update()
@@ -109,7 +109,7 @@ public class PlayerWeapon : MonoBehaviour
     {
         Debug.Log("Añadiendo munición");
         munición += cantidad;
-        textmunicion.text = "10";
+        textmunicion.text = "5";
     }
     private void RealizarDisparo()
     {

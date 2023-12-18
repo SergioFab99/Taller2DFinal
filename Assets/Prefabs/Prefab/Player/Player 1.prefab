@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1201705135526059232
 Transform:
   m_ObjectHideFlags: 0
@@ -40,7 +40,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315820755001061529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -92,7 +92,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 315820755001061529}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2b91bddc002dcc4db3dffe590dc8fc4, type: 3}
   m_Name: 
@@ -103,7 +103,7 @@ MonoBehaviour:
   spawner: {fileID: 551648878767417529}
   SonidoBala: {fileID: 8300000, guid: 17ef1be8000a6d74292a37b285a28a59, type: 3}
   txtcontador: {fileID: 0}
-  animdisparo: {fileID: 0}
+  animdisparo: {fileID: 3845984350680592673}
   tiempo: 0
   yadisparo: 0
   "munici\xF3n": 30
@@ -197,7 +197,7 @@ Transform:
   m_GameObject: {fileID: 3159642828830527965}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0932, y: -0.0898, z: 0}
+  m_LocalPosition: {x: -0.791, y: 1.487, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -210,7 +210,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3159642828830527965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3159642828830527965}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bc7310329b027f43969caa354600bad, type: 3}
   m_Name: 
@@ -284,7 +284,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3159642828830527965}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -382,6 +382,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551648878767417529}
+  - component: {fileID: 557417226487376398}
   m_Layer: 6
   m_Name: FP3
   m_TagString: Untagged
@@ -398,12 +399,34 @@ Transform:
   m_GameObject: {fileID: 6597693714497284670}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16800003, y: -0.03219986, z: 0}
+  m_LocalPosition: {x: 0.085, y: -0.0565, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5056217059432030517}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &557417226487376398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6597693714497284670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2b91bddc002dcc4db3dffe590dc8fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 3647859578678792709, guid: 4f135e66371c96a43b89ef5fe356efe3, type: 3}
+  velocidadDisparo: 50
+  camera: {fileID: 0}
+  spawner: {fileID: 551648878767417529}
+  SonidoBala: {fileID: 8300000, guid: 17ef1be8000a6d74292a37b285a28a59, type: 3}
+  txtcontador: {fileID: 0}
+  animdisparo: {fileID: 3845984350680592673}
+  tiempo: 0
+  yadisparo: 0
+  "munici\xF3n": 30
 --- !u!1 &7260764284015036327
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,7 +598,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 10
   m_Sprite: {fileID: 8539361002539728163, guid: 26283458b571e3946acd483671cf8e0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -673,13 +696,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pistola: {fileID: 9167395445751523641}
-  metralleta: {fileID: 315820755001061529}
+  metralleta: {fileID: 6597693714497284670}
   NivelDeArma: 1
   textpistola: {fileID: 0}
   textmetralleta: {fileID: 0}
-  PlayerDeath: {fileID: 0}
+  PlayerDeath: {fileID: 1030688467172089494}
   anim: {fileID: 0}
-  animPlayer: {fileID: 0}
+  animPlayer: {fileID: 3845984350680592673}
   activarevolver: 0
   activarpistola: 0
 --- !u!114 &2951345673913571015
@@ -798,7 +821,7 @@ Transform:
   m_GameObject: {fileID: 9167395445751523641}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.099, y: -0.089, z: 0}
+  m_LocalPosition: {x: 0.0934, y: -0.0534, z: 0}
   m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
   m_ConstrainProportionsScale: 0
   m_Children: []

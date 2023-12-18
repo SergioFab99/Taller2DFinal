@@ -1,0 +1,962 @@
+fileFormatVersion: 2
+guid: 01239d3f59e98ed458076dc7edbcfb1c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -842818601752112161
+    second: Cosas_rotas_tilemap_0
+  - first:
+      213: -6984863428685215770
+    second: Cosas_rotas_tilemap_1
+  - first:
+      213: 3521021717937860160
+    second: Cosas_rotas_tilemap_2
+  - first:
+      213: -4980218021359646016
+    second: Cosas_rotas_tilemap_3
+  - first:
+      213: 483666795691399860
+    second: Cosas_rotas_tilemap_4
+  - first:
+      213: 9157402511162803720
+    second: Cosas_rotas_tilemap_5
+  - first:
+      213: -4437059577532512545
+    second: Cosas_rotas_tilemap_6
+  - first:
+      213: 3850101697718659484
+    second: Cosas_rotas_tilemap_7
+  - first:
+      213: -6575469939610326266
+    second: Cosas_rotas_tilemap_8
+  - first:
+      213: -9088997432681404747
+    second: Cosas_rotas_tilemap_9
+  - first:
+      213: 6416080366391210185
+    second: Cosas_rotas_tilemap_10
+  - first:
+      213: 1358750101216625859
+    second: Cosas_rotas_tilemap_11
+  - first:
+      213: -1348410190667695502
+    second: Cosas_rotas_tilemap_12
+  - first:
+      213: -5972519896075895645
+    second: Cosas_rotas_tilemap_13
+  - first:
+      213: -4823912990886451729
+    second: Cosas_rotas_tilemap_14
+  - first:
+      213: 944771162705386757
+    second: Cosas_rotas_tilemap_15
+  - first:
+      213: -5222659651646421642
+    second: Cosas_rotas_tilemap_16
+  - first:
+      213: 8091105419835248707
+    second: Cosas_rotas_tilemap_17
+  - first:
+      213: -2951176190467760916
+    second: Cosas_rotas_tilemap_18
+  - first:
+      213: 5537495637920199248
+    second: Cosas_rotas_tilemap_19
+  - first:
+      213: 5226726963459582327
+    second: Cosas_rotas_tilemap_20
+  - first:
+      213: 730353923334114782
+    second: Cosas_rotas_tilemap_21
+  - first:
+      213: -28134046381231268
+    second: Cosas_rotas_tilemap_22
+  - first:
+      213: -439635206703232984
+    second: Cosas_rotas_tilemap_23
+  - first:
+      213: -854766647032161724
+    second: Cosas_rotas_tilemap_24
+  - first:
+      213: 3259358109693609953
+    second: Cosas_rotas_tilemap_25
+  - first:
+      213: -7075566739595691282
+    second: Cosas_rotas_tilemap_26
+  - first:
+      213: 5936711968378640742
+    second: Cosas_rotas_tilemap_27
+  - first:
+      213: 7496809536444646668
+    second: Cosas_rotas_tilemap_28
+  - first:
+      213: -5646238074412344199
+    second: Cosas_rotas_tilemap_29
+  - first:
+      213: 4949961476981725770
+    second: Cosas_rotas_tilemap_30
+  - first:
+      213: -8413359420817602631
+    second: Cosas_rotas_tilemap_31
+  - first:
+      213: 6296048992395747628
+    second: Cosas_rotas_tilemap_32
+  - first:
+      213: -3149764957466348236
+    second: Cosas_rotas_tilemap_33
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 10
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 41
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3597872f4bd44f0800000000000000
+      internalID: -842818601752112161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 35
+        width: 14
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e7c99018b7c01f90800000000000000
+      internalID: -6984863428685215770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 41
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e2f18e89e2dd030800000000000000
+      internalID: 3521021717937860160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 34
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca0cdc8816b2eab0800000000000000
+      internalID: -4980218021359646016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 40
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ba56da536456b600800000000000000
+      internalID: 483666795691399860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 36
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 806012fd011a51f70800000000000000
+      internalID: 9157402511162803720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 35
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd60ee1a2d56c62c0800000000000000
+      internalID: -4437059577532512545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9926a9681f4e6530800000000000000
+      internalID: 3850101697718659484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 19
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60b6442adec3fb4a0800000000000000
+      internalID: -6575469939610326266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 26
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b666949df46dd180800000000000000
+      internalID: -9088997432681404747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 15
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c03b11791f7a0950800000000000000
+      internalID: 6416080366391210185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_11
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c40b81a4004bd210800000000000000
+      internalID: 1358750101216625859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 25
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a3cb5631c794de0800000000000000
+      internalID: -1348410190667695502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 21
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ac717c5cc85d1da0800000000000000
+      internalID: -5972519896075895645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 26
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe522d661b40e0db0800000000000000
+      internalID: -4823912990886451729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 23
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d561bed508c1d00800000000000000
+      internalID: 944771162705386757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 20
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67589d8b7b26587b0800000000000000
+      internalID: -5222659651646421642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 25
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3409485c281694070800000000000000
+      internalID: 8091105419835248707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec149904e05b07d0800000000000000
+      internalID: -2951176190467760916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 14
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 052328b91f229dc40800000000000000
+      internalID: 5537495637920199248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_20
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 15
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 779e6fa1b70198840800000000000000
+      internalID: 5226726963459582327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd84a0160db22a00800000000000000
+      internalID: 730353923334114782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_22
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 8
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c533a5fdb3c0c9ff0800000000000000
+      internalID: -28134046381231268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_23
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 14
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 828c2b9db1a16e9f0800000000000000
+      internalID: -439635206703232984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44adbc563424324f0800000000000000
+      internalID: -854766647032161724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_25
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 0
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e783149ee09b3d20800000000000000
+      internalID: 3259358109693609953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_26
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 6
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea74ddc9898ecd90800000000000000
+      internalID: -7075566739595691282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_27
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 669d409c410736250800000000000000
+      internalID: 5936711968378640742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_28
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 5
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c054b88bd840a0860800000000000000
+      internalID: 7496809536444646668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_29
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97cdd59e26884a1b0800000000000000
+      internalID: -5646238074412344199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_30
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 6
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a1d5fbcbbc1b440800000000000000
+      internalID: 4949961476981725770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_31
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b70b72ce2ebd3b80800000000000000
+      internalID: -8413359420817602631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_32
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c216430633f006750800000000000000
+      internalID: 6296048992395747628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cosas_rotas_tilemap_33
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 5
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 435be389579c944d0800000000000000
+      internalID: -3149764957466348236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cosas_rotas_tilemap_0: -842818601752112161
+      Cosas_rotas_tilemap_1: -6984863428685215770
+      Cosas_rotas_tilemap_10: 6416080366391210185
+      Cosas_rotas_tilemap_11: 1358750101216625859
+      Cosas_rotas_tilemap_12: -1348410190667695502
+      Cosas_rotas_tilemap_13: -5972519896075895645
+      Cosas_rotas_tilemap_14: -4823912990886451729
+      Cosas_rotas_tilemap_15: 944771162705386757
+      Cosas_rotas_tilemap_16: -5222659651646421642
+      Cosas_rotas_tilemap_17: 8091105419835248707
+      Cosas_rotas_tilemap_18: -2951176190467760916
+      Cosas_rotas_tilemap_19: 5537495637920199248
+      Cosas_rotas_tilemap_2: 3521021717937860160
+      Cosas_rotas_tilemap_20: 5226726963459582327
+      Cosas_rotas_tilemap_21: 730353923334114782
+      Cosas_rotas_tilemap_22: -28134046381231268
+      Cosas_rotas_tilemap_23: -439635206703232984
+      Cosas_rotas_tilemap_24: -854766647032161724
+      Cosas_rotas_tilemap_25: 3259358109693609953
+      Cosas_rotas_tilemap_26: -7075566739595691282
+      Cosas_rotas_tilemap_27: 5936711968378640742
+      Cosas_rotas_tilemap_28: 7496809536444646668
+      Cosas_rotas_tilemap_29: -5646238074412344199
+      Cosas_rotas_tilemap_3: -4980218021359646016
+      Cosas_rotas_tilemap_30: 4949961476981725770
+      Cosas_rotas_tilemap_31: -8413359420817602631
+      Cosas_rotas_tilemap_32: 6296048992395747628
+      Cosas_rotas_tilemap_33: -3149764957466348236
+      Cosas_rotas_tilemap_4: 483666795691399860
+      Cosas_rotas_tilemap_5: 9157402511162803720
+      Cosas_rotas_tilemap_6: -4437059577532512545
+      Cosas_rotas_tilemap_7: 3850101697718659484
+      Cosas_rotas_tilemap_8: -6575469939610326266
+      Cosas_rotas_tilemap_9: -9088997432681404747
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,6 +15,11 @@ public class Ayudalo : MonoBehaviour
     public Contador contador;
     public bool misionterminada;
 
+    public TextMeshProUGUI textrecordatorio;
+    public bool yavisto = false;
+    public bool yavista = false;
+    
+
     void Start()
     {
         GameObject jugador = GameObject.FindGameObjectWithTag("Player");
@@ -72,6 +77,12 @@ public class Ayudalo : MonoBehaviour
                         textMesh.text = "Encuentra un botiquin y ayudala.";
                         afirma.SetActive(false);
                         misionaceptada = true;
+                        if(!yavisto)
+                        {
+                            StartCoroutine(ActivarDesactivarRecordatorio("Aprieta la letra C para ver tus nuevas misiones."));
+                            yavisto = true;
+                        }
+                       
                     }
 
                 }
@@ -85,14 +96,19 @@ public class Ayudalo : MonoBehaviour
                         if (contador.contador == 1)
                         {
                             usarbotiquin();
+                           
                         }
+                    }
+                    else
+                    {
+                        letra.SetActive(false);
                     }
 
                 }
             }
         }
     }
-        
+
 
     void usarbotiquin()
     {
@@ -103,16 +119,27 @@ public class Ayudalo : MonoBehaviour
             animator.SetBool("Curada", true);
             misionterminada = true;
             textMesh.text = "Completo.";
+
+            if (!yavista)
+            {
+                StartCoroutine(ActivarDesactivarRecordatorio("Completaste una misión."));
+                yavista = true;
+            }
         }
         else
         {
+            // Solo mostrar el mensaje si no tienes botiquín
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("notienes");
+                Debug.Log("No tienes botiquín");
                 //letra.SetActive(false);
             }
-
         }
-
+    }
+    IEnumerator ActivarDesactivarRecordatorio(string mensaje)
+    {
+        textrecordatorio.text = mensaje;
+        yield return new WaitForSeconds(5f);
+        textrecordatorio.text = "";
     }
 }

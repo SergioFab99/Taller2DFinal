@@ -9,26 +9,25 @@ public class Contador : MonoBehaviour
     public int contador = 0;
     public bool puedeRecoger = true;
 
-    public void Start()
-    {
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Botiquin"))
         {
-            if(puedeRecoger)
+            if (puedeRecoger)
             {
                 contador++;
                 UpdateBotiquinText();
                 Destroy(collision.gameObject);
             }
-            
         }
     }
 
     public void UpdateBotiquinText()
     {
-        txtbotiquin.text = contador.ToString();
+        if (txtbotiquin != null)
+        {
+            txtbotiquin.text = contador.ToString();
+        }
     }
 
     private void Update()
@@ -36,7 +35,6 @@ public class Contador : MonoBehaviour
         if (contador >= 1)
         {
             puedeRecoger = false;
-
         }
     }
 }

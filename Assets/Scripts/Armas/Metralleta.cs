@@ -26,7 +26,7 @@ public class Metralleta : MonoBehaviour
     // Escala original de la metralleta
     private Vector3 escalaOriginal;
 
-    [SerializeField] public int munición = 30; // Cantidad inicial de munición
+    [SerializeField] public int munición = 20; // Cantidad inicial de munición
 
     void Start()
     {
@@ -76,9 +76,9 @@ public class Metralleta : MonoBehaviour
             }
         }
 
-        if (munición >= 30)
+        if (munición >= 20)
         {
-            munición = 30;
+            munición = 20;
             txtcontador.text = munición.ToString();
         }
     }

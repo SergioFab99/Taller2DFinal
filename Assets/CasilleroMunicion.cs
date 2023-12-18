@@ -50,9 +50,9 @@ public class CasilleroMunicion : MonoBehaviour
                     
                         if (!tienemunicion)
                         {
-                            if (contador.munición < 10)
+                            if (contador.munición < 5)
                             {
-                                contador.munición = 10;
+                                contador.munición = 5;
                                 anim.SetBool("Lotiene", true);
                                 contador.textmunicion.text = contador.munición.ToString();
                                 tienemunicion = true;
