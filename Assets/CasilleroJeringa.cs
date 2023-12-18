@@ -50,10 +50,11 @@ public class CasilleroJeringa : MonoBehaviour
         {
             if (tiempo >= 1)
             {
-                letra.SetActive(true);
+                
                 tiempo = 1;
                 if (dentro)
                 {
+                    letra.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.E))
                     {
 

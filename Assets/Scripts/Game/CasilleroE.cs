@@ -50,10 +50,11 @@ public class CasilleroE : MonoBehaviour
         {
             if (tiempo >= 1)
             {
-                letra.SetActive(true);
+                
 
                 if (dentro)
                 {
+                    letra.SetActive(true);
                     if (Input.GetKeyDown(KeyCode.E))
                     {
                         if (contador.puedeRecoger)

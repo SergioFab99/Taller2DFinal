@@ -174,7 +174,6 @@ GameObject:
   - component: {fileID: 6878151233176269969}
   - component: {fileID: 6563022005187897252}
   - component: {fileID: 4003858936955780194}
-  - component: {fileID: 1991585260302903849}
   m_Layer: 0
   m_Name: CasilleroJeringa1
   m_TagString: Untagged
@@ -272,49 +271,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!68 &1991585260302903849
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8650549278651070930}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 0.12662405, y: -0.20110025}
-  - {x: 0.1286711, y: 0.057990745}
-  - {x: 0.076837, y: 0.0053432602}
-  - {x: 0.07291379, y: -0.26435244}
-  - {x: 0.13025384, y: -0.20299362}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
