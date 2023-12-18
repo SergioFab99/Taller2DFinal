@@ -6,6 +6,6 @@ public class KeepPlayer : MonoBehaviour
 {
     private void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        //DontDestroyOnLoad(this.gameObject);
     }
 }

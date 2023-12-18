@@ -34,12 +34,7 @@ public class ObjetoEscena : MonoBehaviour
                     {
                         GameObject player = GameObject.FindGameObjectWithTag("Player");
                         SceneManager.LoadScene("Bunker");
-                        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("Player"));
-                        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("HUD"));
-                        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("CanvasEventos"));
-                        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("Pausa"));
-                       
-                        player.transform.position = new Vector3(-22, 14, 0); // ajusta x, y, z según sea necesario
+                        player.transform.position = new Vector3(-22, 14, 0); // ajusta x, y, z segï¿½n sea necesario
                     }
 
                 }
