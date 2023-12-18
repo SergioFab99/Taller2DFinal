@@ -335,7 +335,7 @@ MonoBehaviour:
   imagen: {fileID: 1221357195}
   NoBoton: 0
   Entrada: 1
-  Escena: "Animaci\xF3nDespertando"
+  Escena: Instrucciones
 --- !u!95 &1052302231
 Animator:
   serializedVersion: 7
