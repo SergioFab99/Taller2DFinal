@@ -32,8 +32,16 @@ public class ObjetoEscena : MonoBehaviour
                 {
                    if(Input.GetKeyDown(KeyCode.E))
                     {
+                        GameObject player = GameObject.FindGameObjectWithTag("Player");
                         SceneManager.LoadScene("Bunker");
+                        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("Player"));
+                        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("HUD"));
+                        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("CanvasEventos"));
+                        DontDestroyOnLoad(GameObject.FindGameObjectWithTag("Pausa"));
+                        player.transform.position = new Vector3(-22, 14, 0); // ajusta x, y, z según sea necesario
                     }
+
+                }
                 }
                 
             }
@@ -54,29 +62,9 @@ public class ObjetoEscena : MonoBehaviour
 
             }
         }
-    }
+    
 
-    private void OnTriggerStay2D(Collider2D other)
-    {
-        /*if (other.CompareTag("Player"))
-        {
-            anim.SetActive(true);
-
-            if (GameManager.instance.numLlaves == 3)
-            {
-                Debug.Log("El jugador tiene 3 llaves. Cargando la escena NivelBoss.");
-                animllaves.SetBool("tres llaves", true);
-                animllaves.SetBool("tresllavesyabrir", true);
-                abierto = true;
-
-                if (time > 1)
-                {
-                    bunker.SetBool("Abrir", true);
-                    //SceneManager.LoadScene("Bunker");
-                }
-            }
-        }*/
-    }
+    
     private void Update()
     {
         if(abierto)

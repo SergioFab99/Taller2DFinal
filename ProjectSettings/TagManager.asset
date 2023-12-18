@@ -20,6 +20,9 @@ TagManager:
   - col1
   - col2
   - akm
+  - HUD
+  - Pausa
+  - CanvasEventos
   layers:
   - Default
   - TransparentFX
